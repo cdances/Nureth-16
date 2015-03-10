@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ZORK_DIR="/home/dances/Games/ZORK-1"
+frotz $ZORK_DIR/data/ZORK1.DAT
+

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+if [ -f CMakeCache.txt ]; then
+        rm CMakeCache.txt
+        rm -rf CMakeFiles
+fi
+
+CTF_DIR_ABS=~/Github/COBRA-TF
+
+PETSC_LIB=~/Github/petsc/arch-linux2-c-debug/lib/libpetsc.so
+PETSC_INCLUDE=~/Github/petsc/arch-linux2-c-debug/include
+PETSC_INCLUDE2=~/Github/petsc/include
+
+# Make sure all of the back slashes have a space in front of them!
+#  -D CMAKE_Fortran_FLAGS:STRING="-fbacktrace -fbounds-check -ffpe-trap=zero -O0 -g --coverage -Wall" \
+#-D CMAKE_Fortran_FLAGS:STRING="-fbacktrace -fbounds-check -ffpe-trap=zero -O0 -g --coverage -I /usr/include -lhdf5_hl -lhdf5 -I${PETSC_INCLUDE2}" \
+# -D CMAKE_Fortran_FLAGS:STRING="-O3 -I /usr/include -lhdf5_hl -lhdf5 -I${PETSC_INCLUDE2}" \
+
+cmake \
+-D TPL_ENABLE_PETSC:BOOL=ON \
+-D TPL_ENABLE_HDF5:BOOL=ON \
+-D TPL_ENABLE_MPI:BOOL=ON \
+-D TPL_PETSC_LIBRARIES:STRING="${PETSC_LIB}" \
+-D TPL_PETSC_INCLUDE_DIRS:STRING="${PETSC_INCLUDE}" \
+-D CMAKE_Fortran_FLAGS:STRING="-fbacktrace -fbounds-check -ffpe-trap=zero -O0 -g -I /usr/include -lhdf5_hl -lhdf5 -I${PETSC_INCLUDE2}" \
+-D TPL_HDF5_LIBRARIES:STRING="/usr/lib/x86_64-linux-gnu/libhdf5_fortran.so" \
+-D CTEST_BUILD_FLAGS:STRING="-j2" \
+-D CTEST_PARALLEL_LEVEL:STRING="2"  \
+-D CMAKE_BUILD_TYPE:STRING=RELEASE  \
+$CTF_DIR_ABS

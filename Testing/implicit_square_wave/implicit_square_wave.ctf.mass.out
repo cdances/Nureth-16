@@ -1,0 +1,15 @@
+
+ Global mass balance
+ ===================
+
+ No. of | Total time  | Total inlet | Total outlet| Total trans.| Relation    | Deviation of
+ timest.|             | massflow    | massflow    | mass incr.  | trans./inlet| mass balance
+ (nstep)|   (timet)   | (m_in_tot)  | (m_out_tot) (m_stored_cool) (m..trans)  | (m..deviat) 
+   [-]  |     [s]     |   [kg/s]    |   [kg/s]    |   [kg/s]    |             |
+=============================================================================================
+    10        0.4500        0.2701        0.2719        0.0000         0.00 %        -0.69 %
+    20        0.9500        0.2701        0.2702        0.0000         0.00 %        -0.04 %
+    30        1.4500        0.2701        0.2701        0.0000         0.00 %        -0.00 %
+    40        1.9500        0.2701        0.2701        0.0000         0.00 %         0.00 %
+    40        2.0000        0.2701        0.2701        0.0000         0.00 %         0.00 %
+    40        2.0000        0.2701        0.2701        0.0000         0.00 %         0.00 %

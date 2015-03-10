@@ -1,0 +1,5 @@
+#   No. of|        Total|        Power|        Inlet|       Outlet|       Energy|       Energy|        Total|       Global|
+#Timesteps|         Time|     Supplied|       Energy|       Energy|       Stored|       Stored|       Energy|       Energy|
+#         |             |             |             |             |      Coolant|        Solid|      Storage|      Balance|
+#         |        [sec]|         [kW]|         [kW]|         [kW]|         [kW]|         [kW]|          [%]|          [%]|
+#=========================================================================================================================

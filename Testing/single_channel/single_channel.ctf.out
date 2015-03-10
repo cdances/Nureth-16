@@ -1,0 +1,2472 @@
+h********************************* input file listing *********************************
+      12345678901234567890123456789012345678901234567890123456789012345678901234567890
+     1        1
+     2        1             0
+     3      0.001           1          100
+     4               Single Channel No Fuel Pins Physical Transient
+     5    1
+     6     1    2    0    0    5     0.25       2    1    1     0    0    0    0     0
+     7      0.00      0.0       0.0
+     8     155.0     -290.0      30.0  1.0000    0.9999999999999999
+     9 air         .00000000001
+    10    2
+    11    1    0    0    0    0    0    0    0    0    0    0    0    0    0
+    12     1    4.93617e-05    0.0149219    0    0    0   -0.0035 -0.0035   0.007  0.007
+    13    4
+    14     1    1    0    0    0    0    0    0    0    0    0    0    0    0
+    15     1    1  10       0.3675      0
+    16  1    1    0    0    0    0    0    1    0    0    0    0    0
+    17     1
+    18    10
+    19    8
+    20    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    21     9
+    22     0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    23   13
+    24    2    0    0    0    0    0    0    0    0    0    0    0    0    0
+    25     1    1    2    0    0    0  0.250000    -295.0       0.0         1
+    26     1  12     1    0    0    0       0.0    -295.0     155.0         1
+    27   -14
+    28 run_out 0
+    29 chan_edits 0
+    30 mass_out 0
+      12345678901234567890123456789012345678901234567890123456789012345678901234567890
+    31 heat_out 0
+    32 krylo_out 0
+    33 convergence 1
+    34 fluid_vtk 0
+    35 hdf5 0
+    36 precise_vtk 0
+    37 end 14
+    38    15
+    39 0.1000E-05  0.1000E+00  2.0000E+00  0.0200E+00  0.0000E+00  0.1000E+04      10000
+    40  -0.1000E-05  0.1000E+00  0.1000E+00  0.0000E+00  0.0000E+00  0.1000E+04      10000
+    41    18
+    42   0.005000
+    43   0.005000
+    44   0.010000
+    45   0.00100
+    46   0.010000
+    47    19
+    48 residual 1
+    49 implicit 0
+    50 optimize 1
+    51 end 19
+
+
+
+
+
+
+
+                    main control parameters are:
+
+                    restart time step . . . . . . . . . . .    0
+                    simulation start time . . . . . . . . .     0.000
+                    outer iteration convergence limit . . . 0.0010000
+                    maximum number of inner iterations  . .  100
+                    maximum number of outer iterations  . .    1
+
+    1
+    1    2    0    0    5
+    2
+    1
+    4
+    1    1    0
+    8
+    0    0    0    0    0    0    0    0    0    0    0
+    9
+    0    0    0    0
+   13
+    2    0    0    0
+  -14
+   15
+   18
+  0.005000
+  0.005000
+  0.010000
+  0.001000
+  0.010000
+   19
+
+
+
+
+                                                           input summary
+
+                                    
+                                    initial system operating pressure (psi)  . . . 2248.08493
+                                    initial system steam/water enthalpy   . . . . . 554.23226
+                                    initial noncondensable gas enthalpy   . . . . .  12.89769
+                                    initial liquid volume fraction        . . . . .   1.00000
+                                    average linear heat rate (kw/ft) . . . . . . .    0.00000
+                                    total axial length (inches). . . . . . . . . .  144.68504
+                                    total no. of axial nodes . . . . . . . . . . .         10
+
+
+
+
+                                    initial volume fractions of vapor and noncondensable gases
+
+   0.00000 percent of the total system volume is initially filled with vapor and/or noncondensable gases. the fraction
+            of this gas volume occupied by water vapor and each noncondensable gas is as follows:
+ steam         1.0000      air    0.00000
+
+
+
+
+                                                          subchannel data
+
+
+                                         nominal         wetted      momentum     momentum      axial variation tables
+                       subchannel     channel area     perimeter       area         area   continuity momentum   wetted
+                         id. no.        (in**2)        (in.)       (bottom)      (top)        area       area    perimeter
+                       ----------------------------------------------------------------------------------------------------
+
+
+                             1              0.0765         0.587        0.0765       0.0765         0         0         0
+
+
+
+
+
+
+
+     **********************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+                                           channel splitting data - axial level   1 of   1
+
+                                          number           no. of     cell length
+                                        of channels         nodes     (nominal)
+
+                                             1               10          1.2057
+
+
+         channel           channels above                   channels below
+                     ----------------------------     ----------------------------
+              1        1    0    0    0    0    0       1    0    0    0    0    0
+
+
+
+         variable axial noding
+         ---------------------
+                    node   length       node   length       node   length       node   length       node   length
+                     no.    (ft)         no.    (ft)         no.    (ft)         no.    (ft)         no.    (ft)
+                    ----   ------       ----   ------       ----   ------       ----   ------       ----   ------
+                      2    1.2057         3    1.2057         4    1.2057         5    1.2057         6    1.2057
+                      7    1.2057         8    1.2057         9    1.2057        10    1.2057        11    1.2057
+
+
+
+
+                                           simultaneous solution group information
+
+                         no. of               last cell number in each group
+                         groups
+                             1                            10
+1                                          axial and/or injection boundary conditions
+
+                            boundary type                                  property specification
+                            --------------------------------               ----------------------
+
+                            1= pressure and enthalpy (axial) . . . . . . . pressure
+                            2= flow and ehthalpy (axial) . . . . . . . . . mass flow
+                            3= zero axial flow . . . . . . . . . . . . . . zero
+                            4= injected flow and enthalpy  . . . . . . . . injected flow
+                            5= pressure sink and enthalpy  . . . . . . . . sink pressure
+
+
+                                                       boundary      specified
+                                 channel     axial       type          property
+                                  index       node    (see above)    (see above)     enthalpy
+
+
+                                      1          1           2              0.55        565.94
+                                      1         12           1              0.00        565.94
+0
+
+                                          zero crossflow boundary conditions
+
+                                             gap     axial
+                                            index    node
+
+
+                   0     channels will be printed
+0                  0     rods will be printed
+0                  0     gaps will be printed
+
+
+
+ *************************************************************************
+ *                         new time domain reached                       *
+ *   minimum   maximum    time      long      short   graphics    dump   *
+ *    time      time     domain     edit      edit      edit             *
+ *    step      step       end    interval  interval  interval  interval *
+ *                                                                       *
+ * 1.000E-06 1.000E-01 2.000E+00 2.000E-02 0.000E+00 0.000E+00 0.000E+00 *
+ *************************************************************************
+
+
+ time step ratio      =  1.000E+03
+
+1 trac major edit
+
+
+
+    time =  2.134E-02 seconds     delt =  1.746E-03 seconds     time steps =    50   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    49
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.02134  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.07       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.08       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.11       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.27       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -2.18       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.325 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.02134  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  4.156E-02 seconds     delt =  2.708E-03 seconds     time steps =    59   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    58
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.04156  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.12       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.38       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -1.79       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.04156  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  6.090E-02 seconds     delt =  3.629E-03 seconds     time steps =    65   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    64
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.06090  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.07       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.21       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.50       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -1.48       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.06090  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  8.195E-02 seconds     delt =  4.632E-03 seconds     time steps =    70   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    69
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.08195  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.13       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.33       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.58       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -1.17       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.08195  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.029E-01 seconds     delt =  5.630E-03 seconds     time steps =    74   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    73
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.10292  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.08       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.21       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.42       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.61       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.90       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.10292  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.216E-01 seconds     delt =  6.517E-03 seconds     time steps =    77   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    76
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.12155  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.13       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.29       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.47       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.59       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.71       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.12155  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.431E-01 seconds     delt =  7.545E-03 seconds     time steps =    80   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    79
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.14313  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.09       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.20       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.36       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.51       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.54       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.52       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.14313  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.681E-01 seconds     delt =  8.734E-03 seconds     time steps =    83   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    82
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.16810  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.14       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.27       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.42       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.51       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.46       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.36       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.16810  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.869E-01 seconds     delt =  9.629E-03 seconds     time steps =    85   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    84
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.18690  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.09       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.19       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.32       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.44       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.49       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.40       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.27       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.18690  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  2.076E-01 seconds     delt =  1.062E-02 seconds     time steps =    87   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    86
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.20763  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.13       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.24       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.37       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.45       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.45       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.32       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.19       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.20763  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  2.305E-01 seconds     delt =  1.170E-02 seconds     time steps =    89   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    88
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.23048  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.09       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.18       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.29       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.40       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.44       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.39       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.25       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.13       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.23048  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  2.428E-01 seconds     delt =  1.229E-02 seconds     time steps =    90   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    89
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.24277  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.11       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.21       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.32       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.41       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.43       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.36       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.22       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.10       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.24277  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  2.692E-01 seconds     delt =  1.355E-02 seconds     time steps =    92   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    91
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.26922  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.09       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.16       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.26       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.36       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.41       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.39       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.29       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.16       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.07       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.26922  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  2.834E-01 seconds     delt =  1.423E-02 seconds     time steps =    93   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    92
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.28345  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.11       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.19       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.29       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.37       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.41       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.36       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.26       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.13       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.28345  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  3.141E-01 seconds     delt =  1.569E-02 seconds     time steps =    95   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    94
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.31407  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.16       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.25       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.33       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.39       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.38       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.30       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.19       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.09       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.31407  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  3.305E-01 seconds     delt =  1.647E-02 seconds     time steps =    96   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    95
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.33054  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.18       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.27       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.35       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.38       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.35       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.27       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.16       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.07       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.33054  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  3.478E-01 seconds     delt =  1.729E-02 seconds     time steps =    97   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    96
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.34783  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.21       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.30       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.36       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.37       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.32       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.23       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.13       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.34783  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  3.660E-01 seconds     delt =  1.816E-02 seconds     time steps =    98   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    97
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.36599  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.24       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.32       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.36       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.35       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.29       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.19       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.10       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.36599  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  3.851E-01 seconds     delt =  1.907E-02 seconds     time steps =    99   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    98
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.38506  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.27       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.33       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.36       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.33       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.26       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.16       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.08       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.38506  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  4.051E-01 seconds     delt =  2.002E-02 seconds     time steps =   100   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    99
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.40508  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.29       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.34       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.35       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.30       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.22       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.13       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.40508  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  4.261E-01 seconds     delt =  2.102E-02 seconds     time steps =   101   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   100
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.42609  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.31       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.35       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.33       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.27       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.19       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.10       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.42609  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  4.482E-01 seconds     delt =  2.207E-02 seconds     time steps =   102   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   101
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.44817  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.33       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.34       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.31       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.24       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.15       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.08       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.44817  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  4.713E-01 seconds     delt =  2.317E-02 seconds     time steps =   103   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   102
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.47134  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.33       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.32       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.27       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.20       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.12       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.47134  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  4.957E-01 seconds     delt =  2.433E-02 seconds     time steps =   104   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   103
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.49567  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.56     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.33       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.30       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.24       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.16       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.09       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.49567  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  5.212E-01 seconds     delt =  2.555E-02 seconds     time steps =   105   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   104
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.52122  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.31       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.27       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.20       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.13       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.07       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.52122  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  5.480E-01 seconds     delt =  2.683E-02 seconds     time steps =   106   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   105
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.54805  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.29       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.24       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.17       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.10       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.54805  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  5.762E-01 seconds     delt =  2.817E-02 seconds     time steps =   107   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   106
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.57622  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.26       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.20       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.13       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.07       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.57622  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  6.058E-01 seconds     delt =  2.958E-02 seconds     time steps =   108   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   107
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.60579  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.23       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.16       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.10       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.60579  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  6.368E-01 seconds     delt =  3.106E-02 seconds     time steps =   109   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   108
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.63685  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.19       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.12       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.07       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.63685  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  6.695E-01 seconds     delt =  3.261E-02 seconds     time steps =   110   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   109
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.66946  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.15       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.09       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.66946  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  7.037E-01 seconds     delt =  3.424E-02 seconds     time steps =   111   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   110
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.70370  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.11       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.70370  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  7.396E-01 seconds     delt =  3.595E-02 seconds     time steps =   112   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   111
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.73965  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.08       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.73965  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  7.774E-01 seconds     delt =  3.775E-02 seconds     time steps =   113   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   112
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.77739  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.77739  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  8.170E-01 seconds     delt =  3.964E-02 seconds     time steps =   114   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   113
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.81703  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00     -0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.81703  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  8.586E-01 seconds     delt =  4.162E-02 seconds     time steps =   115   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   114
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.85865  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.02       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.85865  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  9.023E-01 seconds     delt =  4.370E-02 seconds     time steps =   116   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   115
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.90235  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.01       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.90235  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  9.482E-01 seconds     delt =  4.588E-02 seconds     time steps =   117   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   116
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.94823  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.94823  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  9.964E-01 seconds     delt =  4.818E-02 seconds     time steps =   118   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   117
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.99641  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.99641  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.047E+00 seconds     delt =  5.059E-02 seconds     time steps =   119   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   118
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.04699  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.04699  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.100E+00 seconds     delt =  5.312E-02 seconds     time steps =   120   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   119
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.10011  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.10011  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.156E+00 seconds     delt =  5.577E-02 seconds     time steps =   121   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   120
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.15588  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.15588  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.214E+00 seconds     delt =  5.856E-02 seconds     time steps =   122   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   121
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.21444  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.21444  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.276E+00 seconds     delt =  6.149E-02 seconds     time steps =   123   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   122
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.27593  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.27593  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.340E+00 seconds     delt =  6.456E-02 seconds     time steps =   124   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   123
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.34049  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.34049  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.408E+00 seconds     delt =  6.779E-02 seconds     time steps =   125   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   124
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.40828  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.40828  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.479E+00 seconds     delt =  7.118E-02 seconds     time steps =   126   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   125
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.47946  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.47946  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.554E+00 seconds     delt =  7.474E-02 seconds     time steps =   127   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   126
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.55420  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.55420  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.633E+00 seconds     delt =  7.848E-02 seconds     time steps =   128   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   127
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.63267  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.63267  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.715E+00 seconds     delt =  8.240E-02 seconds     time steps =   129   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   128
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.71507  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.71507  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.802E+00 seconds     delt =  8.652E-02 seconds     time steps =   130   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   129
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.80159  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.80159  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.892E+00 seconds     delt =  9.085E-02 seconds     time steps =   131   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   130
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.89244  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.89244  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  1.988E+00 seconds     delt =  9.539E-02 seconds     time steps =   132   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   131
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      1.98782  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.06    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.85    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.65    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.44    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.23    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.03    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.82    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.62    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.41    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN       0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.21    NaN 1.000 0.000 0.000     0.55     NaN    0.00     NaN      -0.00       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.324 1.000 0.000 0.000     0.55    0.00    0.00    0.55       0.00      0.00      0.00    311.92       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      1.98782  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+              Code Section                                 Cumulative wall-
+                                                             clock time (s)
+--------------------------------------------------     --------------------
+whole simulation time                                                 0.296
+read-in and initialization time                                       0.031
+Preparation for timestep (prep3d)                                     0.001
+Calculation of HTCs and re-meshing (heat_1)                           0.000
+Conductor solution (temp)                                             0.000
+Setup and solve of momentum eqns (xschem part 1)                      0.000
+Setup of continuity/energy eqns (xschem part 2)                       0.000
+Solution of the pressure matri (gssolv)                               0.215
+Independent variable update step (dep_var_update)                     0.000
+Interfacial area transport solve                                      0.000
+Traditional CTF output                                                0.007
+VTK file output                                                       0.032
+Time in transient simulation (trans)                                  0.265
+                             Sum of timed sections                    0.847

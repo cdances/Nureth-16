@@ -1,0 +1,9 @@
+
+ Global mass balance
+ ===================
+
+ No. of | Total time  | Total inlet | Total outlet| Total trans.| Relation    | Deviation of
+ timest.|             | massflow    | massflow    | mass incr.  | trans./inlet| mass balance
+ (nstep)|   (timet)   | (m_in_tot)  | (m_out_tot) (m_stored_cool) (m..trans)  | (m..deviat) 
+   [-]  |     [s]     |   [kg/s]    |   [kg/s]    |   [kg/s]    |             |
+=============================================================================================

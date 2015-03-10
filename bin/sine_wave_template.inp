@@ -1,0 +1,201 @@
+*******************************************************************************
+*Single Subchannel                                                            *
+*******************************************************************************
+*MAIN PROBLEM CONTROL DATA                                                    *
+*******************************************************************************
+*ICOBRA
+       1                                   
+*INITIAL         DUMPF          
+       1             0 
+**  EPSO        OITMAX        IITMAX   
+     0.001           1            50   
+*--------------------------------TEXT-------------------------------------
+              Single Channel No Fuel Pins Physical Transient                          
+*                                                                               
+******************************************************************************* 
+*GROUP 1 - Calculation Variables and Initial Conditions                       * 
+******************************************************************************* 
+*CARD GROUP 1                                                                  
+*NGR                                                                           
+   1                                                                           
+*Card 1.1                                                                      
+*NGAS IRFC EDMD IMIX ISOL    GINIT NOTRANS MESH MAPS IPROP NM11 NM12  NM13 NM14         
+    1    2    0    0    5   {m_dot}      2    1    1     1    0    0    0     0
+*Card 1.2                                                                      
+**   GTOT     AFLUX    DHFRAC                                                  
+     0.00      0.0       0.0                                                  
+*Card 1.3                                                                      
+**   PREF    HIN      HGIN    VFRAC1       VFRAC2                              
+     {PREF}  {H1}      30.0       1.0    0.9999999                           
+*Card 1.4                                                                      
+*GTP(1)    VFRAC(3)  GTP(2)    VFRAC(4)  GTP(3)    VFRAC(5)  GTP(4)    VFRAC(6)
+air         .0000001                                                            
+*                                                                               
+*******************************************************************************
+*GROUP 2 - Channel Description                                                *
+*******************************************************************************
+*CARD GROUP 2                                                                  
+*NGR                                                                           
+   2                                                                           
+*Card 2.1                                                                      
+*NCH NDM2 NDM3 NDM4 NDM5 NDM6 NDM7 NDM8 NDM9 NM10 NM11 NM12 NM13 NM14          
+   1    0    0    0    0    0    0    0    0    0    0    0    0    0          
+*Card 2.2     
+*Subchannel Type 1 - central
+**  I        AN      PW ABOT ATOP NMGP     X   Y    XSIZ  YSIZ                   
+    1      {AN}    0.04  0.0  0.0    0   1.0 1.0    0.1   0.1
+*******************************************************************************
+* GROUP 4 - Vertical Channel Connection Data                                  *
+*******************************************************************************
+*CARD GROUP 4                                                                  
+*NGR                                                                           
+   4                                                                           
+*Card 4.1                                                                      
+*NSEC NSIM IREB NDM4 NDM5 NDM6 NDM7 NDM8 NDM9 NM10 NM11 NM12 NM13 NM14         
+    1    1    0    0    0    0    0    0    0    0    0    0    0    0         
+*Card 4.2                                                                      
+*ISEC NCHN NONO         DXS   IVAR 
+    1    1  {Nx}   {DXS}      0
+*Card 4.3                                                                      
+*I KCHA KCHA KCHA KCHA KCHA KCHA KCHB KCHB KCHB KCHB KCHB KCHB               
+ 1    1    0    0    0    0    0    1    0    0    0    0    0               
+*Card 4.5                                                                      
+*IWDE                                                                          
+    1                                                                          
+*Card 4.6                                                                      
+*MSIM                                                                          
+  {Nx}                                                                        
+*                                                                              
+*******************************************************************************
+*GROUP 8 - Rod and Unheated Conductor Data                                     
+*******************************************************************************
+*CARD GROUP 8                                                                  
+*NGR                                                                           
+   8                                                                           
+*Card 8.1                                                                      
+*NRD NSRD   NC NRTB NRAD NLTY NSTA  NXF NCAN RADF   W3 NM12 NM13 NM14          
+   0    0    0    0    0    0    0    0    0    0    0    0    0    0          
+*******************************************************************************
+*GROUP 9 - Conductor Geometry Description                                      
+*******************************************************************************
+*CARD GROUP 9                                                                  
+*NGRP
+    9
+*NFLT IRLF ICNF IMWR NDM5 NDM6 NDM7 NDM8 NDM9 NM10 NM11 NM12 NM13 NM14
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+*******************************************************************************
+*GROUP 10 - Material Properties Tables                                         
+*******************************************************************************
+*CARD GROUP 10                                                                 
+*NGR                                                                           
+* 10                                                                           
+*Card 10.1                                                                     
+*NMT NDM2 NDM3 NDM4 NDM5 NDM6 NDM7 NDM8 NDM9 NM10 NM11 NM12 NM13 NM14          
+*  0    0    0    0    0    0    0    0    0    0    0    0    0    0          
+*******************************************************************************
+*GROUP 13 - Boundary Condition Data                                            
+*******************************************************************************
+*CARD GROUP 13                                                                 
+*NGR                                                                           
+  13                                                                           
+*Card 13.1                                                                     
+*NBN NKBD NFUN NGBD NDM5 NDM6 NDM7 NDM8 NDM9 NM10 NM11 NM12 NM13 NM14          
+   2    0    2    0    0    0    0    0    0    0    0    0    0    0          
+*Card 13.2                                                                     
+*NPT1  NPT2                                                                         
+ {NPT}   {NPT}                                                                     
+*Card 13.3                                                                     
+*ABSC    ORDINT ABSC    ORDINT   ABSC    ORDINT
+{table_1}
+*ABSC    ORDINT ABSC    ORDINT   ABSC    ORDINT                                
+{table_2}
+*-------------------Inlet Boundary Conditions-------------------------
+*IBD1 IBD2 ISPC N1FN N2FN N3FN  BCVALUE1  BCVALUE2  BCVALUE3   INITGAS         
+    1    1    2    1    2    0   {m_dot}   {H1}       0.0         1 
+*-------------------Outlet Boundary Conditions-------------------------
+*IBD1 IBD2 ISPC N1FN N2FN N3FN  BCVALUE1  BCVALUE2  BCVALUE3   INITGAS         
+    1  {N_out}     1    0    2    0       0.0  {H1}      10.0         1
+*
+*******************************************************************************       
+*Group 14 - Output Options                                                    *   
+*******************************************************************************   
+****NGRP 
+**  14
+****N1 NOU1 NOU2 NOU3 NOU4 IPRP IOPT NDM8 NDM9 NM10 NM11 NM12 NM13 NM14
+**  6     0    0    0    0    0    0    0    0    0    0    0    0    0
+****
+****NGRP
+  -14
+*Output Key Words
+run_out 0
+chan_edits 0
+mass_out 0
+heat_out 0
+krylo_out 0
+convergence 0
+hdf5 1
+end 14
+******************************************************************************* 
+*Group 15 - TIME DOMAIN DATA                                                  *
+*******************************************************************************
+*NGRP                     
+   15  
+**     DTMIN       DTMAX      TEND       EDINT      DMPINT      RTWFP    MAXITS            
+    1.0000E-06      10.0    {t_final}  1.0000E-04  1.0000E+01  0.1000E+04    10000000
+  -0.1000E-03  0.1000E+00   0.1000E+00  0.0000E+00  0.00E+00  0.100E+04 10000000
+*******************************************************************************
+*END GROUP TIME DOMAIN DATA                                                    
+*******************************************************************************
+*
+*******************************************************************************
+*GROUP 17 - Channel/Rod Maps for HDF5 and VTK files                                            
+*******************************************************************************
+**NGR                                                                                          
+   17
+*Card 17.1 - HDF5_NAME VTK_NAME                                                                
+advection.hdf5           advection.vtk
+*Card 17.2 - Rod Map Dimensions                                                                
+**TOTRODSROW TOTRODSCOL                                                                        
+           1          1
+*Card 17.3 - Channel Map Dimensions                                                            
+**TOTCHANSROW TOTCHANSCOL                                                                      
+           1          1
+*Card 17.4 - Rod Map  
+ 1
+*Card 17.4 - Channel Map                                                                       
+ 1
+*******************************************************************************
+*GROUP 18 - Convergence Criteria for Steady State Solve      
+*******************************************************************************
+**NGR                                        
+   18
+*Card 18.1                                   
+**Global Energy Balance Criteria (%)       
+  0.010000
+*Card 18.2                                 
+**Global Mass Balance Criteria (%)                                
+  0.010000
+*Card 18.3                                                       
+**Fluid Energy Storage Criteria (%)                                  
+  0.500000
+*Card 18.4                                                         
+**Solid Energy Storage Criteria (%)                                
+  0.500000
+*Card 18.5                                                  
+**Mass Storage Criteria (%)                                              
+  0.500000
+*******************************************************************************
+*GROUP 19 - Residual Formulation Options
+*******************************************************************************
+*NGRP
+   19
+*key value
+residual 1
+implicit 0
+gravity 0.00
+optimize 1
+CFL {CFL}
+linear_EOS 1
+**
+end 19
+***********

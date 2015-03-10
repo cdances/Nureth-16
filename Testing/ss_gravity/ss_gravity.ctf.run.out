@@ -1,0 +1,24 @@
+ Time step information and convergence control
+ =============================================
+
+#     Step      Number of         Number of         Time Step         Begin Step
+#              Outer Its.  Inner Iterations          Size (s)                (s)
+
+
+
+                         new time domain reached
+
+   minimum   maximum    time      long      short   graphics    dump
+    time      time     domain     edit      edit      edit
+    step      step       end    interval  interval  interval  interval
+
+  1.000E-02 1.000E+00 1.000E+10 1.000E+10 0.000E+00 0.000E+00 0.000E+00
+
+
+ time step ratio      =  1.000E+03
+
+         1              1                 0     0.1000000E-01      0.0000000E+00  0.1000000E+09  0.0000000E+00  0.0000000E+00  0.0000000E+00
+         2              1                 0     0.1050000E-01      0.1050000E-01  0.1000000E+09  0.0000000E+00  0.0000000E+00  0.0000000E+00
+     2     1.050E-02      1   1.050E-02   0.000E+00
+ End of problem: Total CPU time =            0.029 sec
+                 Total CPU time =  0h  0m  0s  29ms
