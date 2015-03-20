@@ -33,7 +33,7 @@ class Rod(object):
         print n,m
         for i in range(n-1):
             for j in range(m-1):
-                Z[i+0][j+0]=self.Tabs[j+2][i]
+                Z[i+0][j+0]=self.T[j+2][i]
         return Z
     
     def process_data(self):
@@ -52,10 +52,10 @@ class Rod(object):
         
         
     def plot_snapshot(self,Nlevel=1,linestyle='k-x'):
-        plt.title("rod {0:d} level {1:f} ft".format(self.number,self.X[Nlevel]))
+        plt.title("rod {0:d} level {1:f} m".format(self.number,self.X[Nlevel]/100.0))
         plt.grid()
         plt.xlabel("Radial Position [cm]")
-        plt.ylabel("Temperature [k]")
+        plt.ylabel("Temperature [C]")
 #         for i in range(Nlevels):
         
         plt.plot(self.r_center,self.T[Nlevel],linestyle)
@@ -69,7 +69,7 @@ class Rod(object):
         Z=self.map_data(x,r)
         print "rod",self.number,"step",plot_num
         
-        plt.figure(figsize=(6.0, 12.0))
+        plt.figure(figsize=(5.0, 6.0))
         plt.title("Rod Temperature [C]")
         plt.pcolormesh(X,Y,Z,edgecolors='face')
         plt.xlabel("Radial Position [cm]")
@@ -109,7 +109,7 @@ def plot_cell_transient(Rods,nlevel,rnode,linestyle):
     plt.plot(t,data,linestyle,label="level {0:d} radial node {1:d}".format(nlevel,rnode))
 
 def plot_rod_profile(Rods,r_num,nlevel,destination=''):
-    plt.figure(figsize=(8.0,8.0))
+    plt.figure(figsize=(5.0,4.0))
     for i,rod in enumerate(Rods[r_num]):
         if(i==0):
             rod.plot_snapshot(nlevel,'g--o')
@@ -133,10 +133,10 @@ def plot_rod_2D(Rods,destination=''):
             
 def plot_rod_transient(Rods,r_num,nlevel,destination=''):
     # Transient Plot at a location
-    plt.figure(figsize=(8.0, 6.0))
+    plt.figure(figsize=(5.0, 4.0))
     plt.title("Transient of rod {0:d} axial level {1:d}".format(r_num,nlevel))
     plt.xlabel("Time [sec]")
-    plt.ylabel("Temperature [F]")
+    plt.ylabel("Temperature [C]")
     for i in range(len(Rods[r_num][0].r_center)):
         plot_cell_transient(Rods,nlevel,i,'-')
     plt.grid()

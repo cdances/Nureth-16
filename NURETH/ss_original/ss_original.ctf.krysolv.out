@@ -1,0 +1,905 @@
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.784460
+ # the actual residual norm =   0.4066192E-04
+ # the error norm =   0.2155293E-10
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.564107
+ # total execution time (sec) =   0.000545
+ # the actual residual norm =   0.1128290E-03
+ # the error norm =   0.2578413E-09
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.540591
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.1313003E-03
+ # the error norm =   0.4277385E-10
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.399265
+ # total execution time (sec) =   0.000400
+ # the actual residual norm =   0.1875576E-03
+ # the error norm =   0.4824118E-09
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.329901
+ # total execution time (sec) =   0.000393
+ # the actual residual norm =   0.2622038E-03
+ # the error norm =   0.3022821E-09
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.322281
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.3583189E-03
+ # the error norm =   0.5665125E-09
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.232154
+ # total execution time (sec) =   0.000365
+ # the actual residual norm =   0.4919442E-03
+ # the error norm =   0.1318953E-08
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.195260
+ # total execution time (sec) =   0.000365
+ # the actual residual norm =   0.6702982E-03
+ # the error norm =   0.9299839E-09
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.176130
+ # total execution time (sec) =   0.000371
+ # the actual residual norm =   0.8846535E-03
+ # the error norm =   0.2044597E-08
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.189674
+ # total execution time (sec) =   0.000369
+ # the actual residual norm =   0.1100742E-02
+ # the error norm =   0.9378116E-09
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.176046
+ # total execution time (sec) =   0.000424
+ # the actual residual norm =   0.1280324E-02
+ # the error norm =   0.2977404E-08
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.168702
+ # total execution time (sec) =   0.000366
+ # the actual residual norm =   0.1244712E-02
+ # the error norm =   0.4972801E-08
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.153070
+ # total execution time (sec) =   0.000362
+ # the actual residual norm =   0.5955137E-03
+ # the error norm =   0.1838047E-08
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.169636
+ # total execution time (sec) =   0.000362
+ # the actual residual norm =   0.1391010E-02
+ # the error norm =   0.2375221E-08
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.165424
+ # total execution time (sec) =   0.000374
+ # the actual residual norm =   0.2163940E-02
+ # the error norm =   0.1119790E-08
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.300473
+ # total execution time (sec) =   0.000374
+ # the actual residual norm =   0.2689629E-02
+ # the error norm =   0.2574974E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.310205
+ # total execution time (sec) =   0.000373
+ # the actual residual norm =   0.2892259E-02
+ # the error norm =   0.1129899E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.166743
+ # total execution time (sec) =   0.000382
+ # the actual residual norm =   0.2626901E-02
+ # the error norm =   0.2610301E-08
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.318754
+ # total execution time (sec) =   0.000370
+ # the actual residual norm =   0.1841013E-02
+ # the error norm =   0.3272731E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.278171
+ # total execution time (sec) =   0.000371
+ # the actual residual norm =   0.6298448E-03
+ # the error norm =   0.4703390E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.292135
+ # total execution time (sec) =   0.000405
+ # the actual residual norm =   0.7817291E-03
+ # the error norm =   0.1613130E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.282610
+ # total execution time (sec) =   0.000380
+ # the actual residual norm =   0.2064070E-02
+ # the error norm =   0.1024098E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.275739
+ # total execution time (sec) =   0.000375
+ # the actual residual norm =   0.2862346E-02
+ # the error norm =   0.2673980E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.305917
+ # total execution time (sec) =   0.000374
+ # the actual residual norm =   0.2906474E-02
+ # the error norm =   0.1685372E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.252174
+ # total execution time (sec) =   0.000370
+ # the actual residual norm =   0.2136644E-02
+ # the error norm =   0.1748928E-12
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.259792
+ # total execution time (sec) =   0.000369
+ # the actual residual norm =   0.7720307E-03
+ # the error norm =   0.3132921E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.249869
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.7303553E-03
+ # the error norm =   0.7392028E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.271651
+ # total execution time (sec) =   0.000366
+ # the actual residual norm =   0.1821249E-02
+ # the error norm =   0.2479304E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.261102
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.2104994E-02
+ # the error norm =   0.7571570E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.261749
+ # total execution time (sec) =   0.000369
+ # the actual residual norm =   0.1525671E-02
+ # the error norm =   0.5170317E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.270366
+ # total execution time (sec) =   0.000412
+ # the actual residual norm =   0.4197155E-03
+ # the error norm =   0.6431778E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.251697
+ # total execution time (sec) =   0.000382
+ # the actual residual norm =   0.6489915E-03
+ # the error norm =   0.5550718E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.256235
+ # total execution time (sec) =   0.000390
+ # the actual residual norm =   0.1175385E-02
+ # the error norm =   0.6618575E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.293709
+ # total execution time (sec) =   0.000379
+ # the actual residual norm =   0.1005833E-02
+ # the error norm =   0.1795402E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.256040
+ # total execution time (sec) =   0.000376
+ # the actual residual norm =   0.3870247E-03
+ # the error norm =   0.2218835E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.246858
+ # total execution time (sec) =   0.000399
+ # the actual residual norm =   0.2288530E-03
+ # the error norm =   0.3056699E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.243848
+ # total execution time (sec) =   0.000373
+ # the actual residual norm =   0.4922476E-03
+ # the error norm =   0.8675091E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.240413
+ # total execution time (sec) =   0.000447
+ # the actual residual norm =   0.3657539E-03
+ # the error norm =   0.8844804E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.242651
+ # total execution time (sec) =   0.000373
+ # the actual residual norm =   0.6953333E-04
+ # the error norm =   0.1368209E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.280019
+ # total execution time (sec) =   0.000393
+ # the actual residual norm =   0.1410893E-03
+ # the error norm =   0.8886712E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.245792
+ # total execution time (sec) =   0.000431
+ # the actual residual norm =   0.1621851E-03
+ # the error norm =   0.2389672E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.297007
+ # total execution time (sec) =   0.000377
+ # the actual residual norm =   0.6668852E-04
+ # the error norm =   0.8785204E-16
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.237106
+ # total execution time (sec) =   0.000376
+ # the actual residual norm =   0.2215556E-04
+ # the error norm =   0.7264909E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.252588
+ # total execution time (sec) =   0.000375
+ # the actual residual norm =   0.4351947E-04
+ # the error norm =   0.3429025E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.231724
+ # total execution time (sec) =   0.000377
+ # the actual residual norm =   0.1983923E-04
+ # the error norm =   0.1067980E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.223997
+ # total execution time (sec) =   0.000376
+ # the actual residual norm =   0.5515495E-05
+ # the error norm =   0.6049049E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.232524
+ # total execution time (sec) =   0.000394
+ # the actual residual norm =   0.1038941E-04
+ # the error norm =   0.5195671E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.228305
+ # total execution time (sec) =   0.000397
+ # the actual residual norm =   0.5471052E-05
+ # the error norm =   0.4035312E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.211299
+ # total execution time (sec) =   0.000378
+ # the actual residual norm =   0.4952108E-05
+ # the error norm =   0.1749123E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.235302
+ # total execution time (sec) =   0.000380
+ # the actual residual norm =   0.5642512E-05
+ # the error norm =   0.2184742E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.206607
+ # total execution time (sec) =   0.000428
+ # the actual residual norm =   0.5608321E-05
+ # the error norm =   0.3051758E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.249592
+ # total execution time (sec) =   0.000395
+ # the actual residual norm =   0.5879625E-05
+ # the error norm =   0.6104577E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.216862
+ # total execution time (sec) =   0.000376
+ # the actual residual norm =   0.6364884E-05
+ # the error norm =   0.1346846E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.226699
+ # total execution time (sec) =   0.000373
+ # the actual residual norm =   0.6907382E-05
+ # the error norm =   0.5906827E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.213865
+ # total execution time (sec) =   0.000423
+ # the actual residual norm =   0.7450291E-05
+ # the error norm =   0.2077674E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.255560
+ # total execution time (sec) =   0.000372
+ # the actual residual norm =   0.8041229E-05
+ # the error norm =   0.4818615E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.267566
+ # total execution time (sec) =   0.000372
+ # the actual residual norm =   0.8745551E-05
+ # the error norm =   0.1734404E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.283889
+ # total execution time (sec) =   0.000379
+ # the actual residual norm =   0.9612345E-05
+ # the error norm =   0.4238863E-16
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.292838
+ # total execution time (sec) =   0.000371
+ # the actual residual norm =   0.2550178E-04
+ # the error norm =   0.4932149E-16
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.338146
+ # total execution time (sec) =   0.000371
+ # the actual residual norm =   0.6756476E-04
+ # the error norm =   0.2013183E-17
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.285665
+ # total execution time (sec) =   0.000407
+ # the actual residual norm =   0.7512471E-04
+ # the error norm =   0.2813067E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.299509
+ # total execution time (sec) =   0.000373
+ # the actual residual norm =   0.1618234E-04
+ # the error norm =   0.1693153E-16
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.246701
+ # total execution time (sec) =   0.000371
+ # the actual residual norm =   0.9425695E-05
+ # the error norm =   0.1277190E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.256632
+ # total execution time (sec) =   0.000371
+ # the actual residual norm =   0.8590355E-05
+ # the error norm =   0.4663561E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.267231
+ # total execution time (sec) =   0.000372
+ # the actual residual norm =   0.8284929E-05
+ # the error norm =   0.1694532E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.326718
+ # total execution time (sec) =   0.000372
+ # the actual residual norm =   0.8491179E-05
+ # the error norm =   0.7248243E-18
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.232847
+ # total execution time (sec) =   0.000371
+ # the actual residual norm =   0.8016448E-05
+ # the error norm =   0.3891543E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.304498
+ # total execution time (sec) =   0.000371
+ # the actual residual norm =   0.7955566E-05
+ # the error norm =   0.5257200E-17
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.251321
+ # total execution time (sec) =   0.000371
+ # the actual residual norm =   0.7599075E-05
+ # the error norm =   0.6728267E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.320977
+ # total execution time (sec) =   0.000372
+ # the actual residual norm =   0.7438233E-05
+ # the error norm =   0.1077392E-17
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.316505
+ # total execution time (sec) =   0.000404
+ # the actual residual norm =   0.7272046E-05
+ # the error norm =   0.1590162E-17
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.307352
+ # total execution time (sec) =   0.000372
+ # the actual residual norm =   0.7109086E-05
+ # the error norm =   0.3611777E-17
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.330985
+ # total execution time (sec) =   0.000371
+ # the actual residual norm =   0.6975791E-05
+ # the error norm =   0.4019863E-18
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.334995
+ # total execution time (sec) =   0.000395
+ # the actual residual norm =   0.6835917E-05
+ # the error norm =   0.2722721E-18
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.131989
+ # total execution time (sec) =   0.000393
+ # the actual residual norm =   0.6703587E-05
+ # the error norm =   0.6467414E-10
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.131528
+ # total execution time (sec) =   0.000373
+ # the actual residual norm =   0.6578035E-05
+ # the error norm =   0.6607516E-10
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.139057
+ # total execution time (sec) =   0.000372
+ # the actual residual norm =   0.6458770E-05
+ # the error norm =   0.3357106E-10
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.201842
+ # total execution time (sec) =   0.000374
+ # the actual residual norm =   0.6345152E-05
+ # the error norm =   0.1356523E-12
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.343792
+ # total execution time (sec) =   0.000373
+ # the actual residual norm =   0.6236929E-05
+ # the error norm =   0.1104795E-18
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.133183
+ # total execution time (sec) =   0.000373
+ # the actual residual norm =   0.6133598E-05
+ # the error norm =   0.5330304E-10
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.290588
+ # total execution time (sec) =   0.000407
+ # the actual residual norm =   0.6035100E-05
+ # the error norm =   0.1436054E-16
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.262814
+ # total execution time (sec) =   0.000373
+ # the actual residual norm =   0.5941080E-05
+ # the error norm =   0.1825198E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.269710
+ # total execution time (sec) =   0.000375
+ # the actual residual norm =   0.5851554E-05
+ # the error norm =   0.9525231E-16
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.128756
+ # total execution time (sec) =   0.000385
+ # the actual residual norm =   0.5766588E-05
+ # the error norm =   0.7382484E-10
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.311645
+ # total execution time (sec) =   0.000374
+ # the actual residual norm =   0.5686209E-05
+ # the error norm =   0.1945384E-17
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.272747
+ # total execution time (sec) =   0.000374
+ # the actual residual norm =   0.5610704E-05
+ # the error norm =   0.6904876E-16
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.257561
+ # total execution time (sec) =   0.000372
+ # the actual residual norm =   0.5540450E-05
+ # the error norm =   0.2761304E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.142362
+ # total execution time (sec) =   0.000374
+ # the actual residual norm =   0.5475815E-05
+ # the error norm =   0.2131551E-10
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.283080
+ # total execution time (sec) =   0.000372
+ # the actual residual norm =   0.5417181E-05
+ # the error norm =   0.2573829E-16
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.259443
+ # total execution time (sec) =   0.000374
+ # the actual residual norm =   0.5364951E-05
+ # the error norm =   0.2248250E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.228245
+ # total execution time (sec) =   0.000408
+ # the actual residual norm =   0.5319238E-05
+ # the error norm =   0.3945070E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.226638
+ # total execution time (sec) =   0.000374
+ # the actual residual norm =   0.5280104E-05
+ # the error norm =   0.4540570E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.232404
+ # total execution time (sec) =   0.000375
+ # the actual residual norm =   0.5247112E-05
+ # the error norm =   0.2653208E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.228647
+ # total execution time (sec) =   0.000373
+ # the actual residual norm =   0.5219576E-05
+ # the error norm =   0.3730352E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.254371
+ # total execution time (sec) =   0.000376
+ # the actual residual norm =   0.5196074E-05
+ # the error norm =   0.3474082E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.203819
+ # total execution time (sec) =   0.000375
+ # the actual residual norm =   0.5175193E-05
+ # the error norm =   0.3640454E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.213117
+ # total execution time (sec) =   0.000374
+ # the actual residual norm =   0.5154363E-05
+ # the error norm =   0.1539971E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.220386
+ # total execution time (sec) =   0.000374
+ # the actual residual norm =   0.5131660E-05
+ # the error norm =   0.7849149E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.241736
+ # total execution time (sec) =   0.000374
+ # the actual residual norm =   0.5103902E-05
+ # the error norm =   0.1092577E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.241037
+ # total execution time (sec) =   0.000371
+ # the actual residual norm =   0.5068707E-05
+ # the error norm =   0.1157270E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.241371
+ # total execution time (sec) =   0.000422
+ # the actual residual norm =   0.5023278E-05
+ # the error norm =   0.1112140E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.233119
+ # total execution time (sec) =   0.000371
+ # the actual residual norm =   0.5102139E-05
+ # the error norm =   0.2415394E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.242426
+ # total execution time (sec) =   0.000370
+ # the actual residual norm =   0.4579672E-05
+ # the error norm =   0.9200367E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.242536
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.4848041E-05
+ # the error norm =   0.9641052E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.229597
+ # total execution time (sec) =   0.000370
+ # the actual residual norm =   0.4912275E-05
+ # the error norm =   0.3216656E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.254841
+ # total execution time (sec) =   0.000369
+ # the actual residual norm =   0.4581525E-05
+ # the error norm =   0.2933494E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.234307
+ # total execution time (sec) =   0.000369
+ # the actual residual norm =   0.4475282E-05
+ # the error norm =   0.1899026E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.242118
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.4366619E-05
+ # the error norm =   0.9024903E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.214952
+ # total execution time (sec) =   0.000370
+ # the actual residual norm =   0.4125118E-05
+ # the error norm =   0.1040795E-13
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.232767
+ # total execution time (sec) =   0.000370
+ # the actual residual norm =   0.3961910E-05
+ # the error norm =   0.1937438E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.117461
+ # total execution time (sec) =   0.000426
+ # the actual residual norm =   0.3771858E-05
+ # the error norm =   0.1297324E-09
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.277916
+ # total execution time (sec) =   0.000369
+ # the actual residual norm =   0.3602480E-05
+ # the error norm =   0.2753901E-16
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.246113
+ # total execution time (sec) =   0.000389
+ # the actual residual norm =   0.3439793E-05
+ # the error norm =   0.4920603E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.230594
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.3281629E-05
+ # the error norm =   0.1960294E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.254887
+ # total execution time (sec) =   0.000369
+ # the actual residual norm =   0.3145794E-05
+ # the error norm =   0.2005572E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.112889
+ # total execution time (sec) =   0.000367
+ # the actual residual norm =   0.3025470E-05
+ # the error norm =   0.1552454E-09
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.295808
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.2922763E-05
+ # the error norm =   0.4300214E-17
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.191131
+ # total execution time (sec) =   0.000367
+ # the actual residual norm =   0.2852693E-05
+ # the error norm =   0.1556962E-12
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.151668
+ # total execution time (sec) =   0.000367
+ # the actual residual norm =   0.2809169E-05
+ # the error norm =   0.4843769E-11
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.231537
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.2789953E-05
+ # the error norm =   0.1527945E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.257772
+ # total execution time (sec) =   0.000402
+ # the actual residual norm =   0.2791561E-05
+ # the error norm =   0.1364444E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.243142
+ # total execution time (sec) =   0.000369
+ # the actual residual norm =   0.2809358E-05
+ # the error norm =   0.5283657E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.255115
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.2838303E-05
+ # the error norm =   0.1772001E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.247862
+ # total execution time (sec) =   0.000367
+ # the actual residual norm =   0.2873139E-05
+ # the error norm =   0.3498571E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.235518
+ # total execution time (sec) =   0.000369
+ # the actual residual norm =   0.2909376E-05
+ # the error norm =   0.1104313E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.240479
+ # total execution time (sec) =   0.000367
+ # the actual residual norm =   0.2942584E-05
+ # the error norm =   0.7072137E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.233651
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.2969815E-05
+ # the error norm =   0.1338708E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.262223
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.2988137E-05
+ # the error norm =   0.9693052E-16
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.232360
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.2996025E-05
+ # the error norm =   0.1521115E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.115691
+ # total execution time (sec) =   0.000366
+ # the actual residual norm =   0.2992168E-05
+ # the error norm =   0.1201560E-09
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.133071
+ # total execution time (sec) =   0.000401
+ # the actual residual norm =   0.2975914E-05
+ # the error norm =   0.2611637E-10
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.227914
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.2947147E-05
+ # the error norm =   0.2253509E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.239747
+ # total execution time (sec) =   0.000367
+ # the actual residual norm =   0.2906196E-05
+ # the error norm =   0.7472224E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.255345
+ # total execution time (sec) =   0.000367
+ # the actual residual norm =   0.2853462E-05
+ # the error norm =   0.1744068E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.234628
+ # total execution time (sec) =   0.000367
+ # the actual residual norm =   0.2789964E-05
+ # the error norm =   0.1149376E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.238789
+ # total execution time (sec) =   0.000366
+ # the actual residual norm =   0.2716418E-05
+ # the error norm =   0.7628517E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.229756
+ # total execution time (sec) =   0.000369
+ # the actual residual norm =   0.2634311E-05
+ # the error norm =   0.1699900E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.231740
+ # total execution time (sec) =   0.000370
+ # the actual residual norm =   0.2544310E-05
+ # the error norm =   0.1367642E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.239547
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.2448047E-05
+ # the error norm =   0.6411331E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.223487
+ # total execution time (sec) =   0.000367
+ # the actual residual norm =   0.2346754E-05
+ # the error norm =   0.2697650E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.236345
+ # total execution time (sec) =   0.000402
+ # the actual residual norm =   0.2241414E-05
+ # the error norm =   0.7883552E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.245633
+ # total execution time (sec) =   0.000369
+ # the actual residual norm =   0.2133185E-05
+ # the error norm =   0.3189468E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.242801
+ # total execution time (sec) =   0.000366
+ # the actual residual norm =   0.2023395E-05
+ # the error norm =   0.3926731E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.234207
+ # total execution time (sec) =   0.000369
+ # the actual residual norm =   0.1912904E-05
+ # the error norm =   0.8192726E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.228543
+ # total execution time (sec) =   0.000367
+ # the actual residual norm =   0.1802633E-05
+ # the error norm =   0.1300782E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.242825
+ # total execution time (sec) =   0.000367
+ # the actual residual norm =   0.1693373E-05
+ # the error norm =   0.3279190E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.225627
+ # total execution time (sec) =   0.000403
+ # the actual residual norm =   0.1586058E-05
+ # the error norm =   0.1497076E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.269127
+ # total execution time (sec) =   0.000371
+ # the actual residual norm =   0.1481101E-05
+ # the error norm =   0.2543903E-16
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.241911
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.1379242E-05
+ # the error norm =   0.2905361E-15
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.227051
+ # total execution time (sec) =   0.000368
+ # the actual residual norm =   0.1280802E-05
+ # the error norm =   0.1060319E-14
+
+ Iterative solver has satisfied convergence test
+ # return code =  0 convergence rate =  0.236679
+ # total execution time (sec) =   0.000403
+ # the actual residual norm =   0.1186234E-05
+ # the error norm =   0.4045697E-15
+

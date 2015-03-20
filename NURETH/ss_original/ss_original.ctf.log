@@ -1,0 +1,4 @@
+You cannot create a Rod VTK file without specifying         
+Map data.  Set Map=1 on Card 1.1 and then create Card       
+Group 17.                                                   
+
