@@ -1,0 +1,835 @@
+h********************************* input file listing *********************************
+      12345678901234567890123456789012345678901234567890123456789012345678901234567890
+     1        1
+     2        1             0
+     3      0.001           1           10
+     4               Single Channel No Fuel Pins Physical Transient
+     5    1
+     6     1    2    0    0    5     0.30       2    1    0     0    0    0    0    0
+     7    0.300      0.0E+0       0.0
+     8     165.0     -290.0      30.0       1.0    0.9999999
+     9 air         .0000001
+    10    2
+    11    1    0    0    0    0    0    0    0    0    0    0    0    0    0
+    12     1    0.87877816e-04   .0298451302    0    0    0   -0.0035 -0.0035   0.007  0.007
+    13    4
+    14     1    1    0    0    0    0    0    0    0    0    0    0    0    0
+    15     1    1    20    0.1829    0
+    16     1    1    0    0    0    0    0    1    0    0    0    0    0
+    17      1
+    18     20
+    19    8
+    20     1    0    1    1    0    0    0    0    0    0    0     0    0    0
+    21       1      1      1      0      0  1.000        1000.0      1  0.000   290.0
+    22      1 1.000     0 0.000     0 0.000     0 0.000     0 0.000     0 0.000     0 0.000     0 0.000
+    23      1     1     0     2
+    24       1
+    25        0.000       300.0
+    26        3.675       300.0
+    27     9
+    28     1    0    0    0    0    0    0    0    0    0    0    0    0    0
+    29     1 nucl 1.0000E-02 0.9000E-02    10    1    1    0 0.00 0.025E-02 1.00    0    0    0
+    30  10
+      12345678901234567890123456789012345678901234567890123456789012345678901234567890
+    31   1    0    0    0    0    0    0    0    0    0    0    0    0    0
+    32     1    2   8470.57                   Inconel 600
+    33      -73.0    0.431     14.83
+    34      871.0    0.431     14.83
+    35    11
+    36      1     1     2     1     0     1     0     0     0     0     0     0     0     0
+    37   0.00
+    38      1      2
+    39   0.00000000     1.00000
+    40   3.65800000     1.00000
+    41   0.0   0.0
+    42   0.00
+    43       1.00
+    44   13
+    45    2    0    0    0    0    0    0    0    0    0    0    0    0    0
+    46     1    1    2    0    0    0      0.00    -290.0       0.0         1
+    47     1   22    1    0    0    0       0.0    -290.0     165.0        1
+    48   -14
+    49 hdf5 0
+    50 rod_vtk 0
+    51 fluid_vtk 1
+    52 precise_vtk 1
+    53 run_out 1
+    54 chan_edits 0
+    55 mass_out 1
+    56 heat_out 1
+    57 krylo_out 1
+    58 convergence 1
+    59 end 14
+    60    15
+      12345678901234567890123456789012345678901234567890123456789012345678901234567890
+    61   1.0000E-05  1.00000E-02       10.05        0.10  1.0000E+01  0.1000E+04    10000
+    62   -0.1000E-03  0.1000E+00  0.1000E+00  0.0000E+00  0.0000E+00  0.1000E+04   10000
+    63    19
+    64 residual 1
+    65 implicit 0
+    66 optimize 1
+    67 end 19
+
+
+
+
+
+
+
+                    main control parameters are:
+
+                    restart time step . . . . . . . . . . .    0
+                    simulation start time . . . . . . . . .     0.000
+                    outer iteration convergence limit . . . 0.0010000
+                    maximum number of inner iterations  . .   10
+                    maximum number of outer iterations  . .    1
+
+    1
+    1    2    0    0    5
+    2
+    1
+    4
+    1    1    0
+    8
+    1    0    1    1    0    0    0    0    0    0    0
+    9
+    1    0    0    0
+   10
+    1
+   11
+    1    1    2    1    0    1
+   13
+    2    0    0    0
+  -14
+   15
+   19
+
+
+
+
+                                                           input summary
+
+                                    
+                                    initial system operating pressure (psi)  . . . 2393.12267
+                                    initial system steam/water enthalpy   . . . . . 554.23226
+                                    initial noncondensable gas enthalpy   . . . . .  12.89769
+                                    initial liquid volume fraction        . . . . .   1.00000
+                                    average linear heat rate (kw/ft) . . . . . . .    0.00000
+                                    total axial length (inches). . . . . . . . . .  144.01575
+                                    total no. of axial nodes . . . . . . . . . . .         20
+
+
+
+
+                                    initial volume fractions of vapor and noncondensable gases
+
+   0.00000 percent of the total system volume is initially filled with vapor and/or noncondensable gases. the fraction
+            of this gas volume occupied by water vapor and each noncondensable gas is as follows:
+ steam         1.0000      air    0.00000
+
+
+
+
+                                                          subchannel data
+
+
+                                         nominal         wetted      momentum     momentum      axial variation tables
+                       subchannel     channel area     perimeter       area         area   continuity momentum   wetted
+                         id. no.        (in**2)        (in.)       (bottom)      (top)        area       area    perimeter
+                       ----------------------------------------------------------------------------------------------------
+
+
+                             1              0.1362         1.175        0.1362       0.1362         0         0         0
+
+
+
+
+
+
+
+     **********************************************************************************************************************************
+
+          channel thermal connection input data
+          -------------------------------------
+
+          channel no.                    fuel rod - surface index pairs                                  heat slab indices
+          -----------     ------------------------------------------------------------     ----------------------------------------
+
+               1            1 - 1     0 - 0     0 - 0     0 - 0     0 - 0     0 - 0            0    0    0    0    0    0    0    0
+
+
+     **********************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+                                           channel splitting data - axial level   1 of   1
+
+                                          number           no. of     cell length
+                                        of channels         nodes     (nominal)
+
+                                             1               20          0.6001
+
+
+         channel           channels above                   channels below
+                     ----------------------------     ----------------------------
+              1        1    0    0    0    0    0       1    0    0    0    0    0
+
+
+
+         variable axial noding
+         ---------------------
+                    node   length       node   length       node   length       node   length       node   length
+                     no.    (ft)         no.    (ft)         no.    (ft)         no.    (ft)         no.    (ft)
+                    ----   ------       ----   ------       ----   ------       ----   ------       ----   ------
+                      2    0.6001         3    0.6001         4    0.6001         5    0.6001         6    0.6001
+                      7    0.6001         8    0.6001         9    0.6001        10    0.6001        11    0.6001
+                     12    0.6001        13    0.6001        14    0.6001        15    0.6001        16    0.6001
+                     17    0.6001        18    0.6001        19    0.6001        20    0.6001        21    0.6001
+
+
+
+
+                                           simultaneous solution group information
+
+                         no. of               last cell number in each group
+                         groups
+                             1                            20
+
+
+
+
+     *****************************************************************************************************************************
+
+                                                fuel rod and heat slab model input
+
+                                                     no. of fuel rods  =   1               no. of fuel rod surfaces  =   1
+                                                     no. of heat slabs =   0
+
+     *****************************************************************************************************************************
+
+
+                                                       fuel rod model input
+
+         fuel rod    axial location    geometry   conductor    radial power    axial power     renoding     minimum        rod
+           index      (in.) - (in.)      type        type          factor         profile       flag      node size   multiplier
+         --------    --------------    --------    ---------    ------------    -----------    --------    ---------   ----------
+
+             1         0.00 - 144.02     nucl          1            1.000            1        1000000000     0.0500        1.000
+          ------------------------------------------------------------------------------------------------------------------------
+            Average radial factor:                                  1.000
+
+
+
+     -----------------------------------------------------------------------------------------------------------------------------
+
+                                             conductor geometry description
+                                                  no. of geometry types =  1
+
+     -----------------------------------------------------------------------------------------------------------------------------
+
+0       type  1 - nucl     nuclear fuel rod -----------------------------------------------------------------------------------
+
+           rod diameter                 0.3937 (in.)                 no. of nodes in fuel         10
+           fuel pellet diameter         0.3543 (in.)                 fuel theoretical density     1.00000
+           clad thickness               0.0098 (in.)                 central void diamter         0.0000 (in.)
+
+           fuel material index =  1
+           cladding material index =  1
+           oxide on clad exterior is zirconium-dioxide
+
+
+           radial noding information
+                      node            region          location     power fraction     power factor
+                      ----            ------          --------     --------------     ------------
+                      *fuel*
+                        1      ( 0.0000- 0.0186)      0.0132         0.01108            1.00000
+                        2      ( 0.0186- 0.0373)      0.0295         0.03324            1.00000
+                        3      ( 0.0373- 0.0559)      0.0475         0.05540            1.00000
+                        4      ( 0.0559- 0.0746)      0.0659         0.07756            1.00000
+                        5      ( 0.0746- 0.0932)      0.0844         0.09972            1.00000
+                        6      ( 0.0932- 0.1119)      0.1030         0.12188            1.00000
+                        7      ( 0.1119- 0.1305)      0.1216         0.14404            1.00000
+                        8      ( 0.1305- 0.1492)      0.1402         0.16620            1.00000
+                        9      ( 0.1492- 0.1678)      0.1588         0.18837            1.00000
+                       10      ( 0.1678- 0.1772)      0.1772         0.10249            1.00000
+                      *clad*
+                       11      ( 0.1870- 0.1919)      0.1870
+                       12      ( 0.1919- 0.1969)      0.1969
+
+
+
+        constant gap conductance
+           table of gap conductance vs rod for this geometry type
+                    rod     hgap        rod     hgap        rod     hgap        rod     hgap        rod     hgap
+                    no.   (b/h-f2)      no.   (b/h-f2)      no.   (b/h-f2)      no.   (b/h-f2)      no.   (b/h-f2)
+                    ---   --------      ---   --------      ---   --------      ---   --------      ---   --------
+                      1     176.1
+
+
+     ------------------------------------------------------------------------------------------------------------------------
+
+
+     material property tables
+     ------------------------
+
+
+           material type -  1          cold state density = 528.800 (lbm/ft3)          Inconel   
+
+                      temperature (f)       specific heat (btu/lbm-f)       conductivity (btu/hr-ft-f)
+
+                          -99.4                0.1029                         8.569
+                         1599.8                0.1029                         8.569
+
+
+Axial Power Profile Table Data
+------------------------------
+                          Time [s]:     0.00000E+00
+    Axial Power Factor Table Index:               1
+               Used by Rod numbers:
+      1
+Rod node no.      Axial loc. [m]      Fluid node no.   Power Factor
+------------------------------------------------------------------------
+           1              0.0000                   2          1.000
+           2              0.0914                   2          1.000
+           3              0.2743                   3          1.000
+           4              0.4572                   4          1.000
+           5              0.6401                   5          1.000
+           6              0.8230                   6          1.000
+           7              1.0059                   7          1.000
+           8              1.1888                   8          1.000
+           9              1.3717                   9          1.000
+          10              1.5546                  10          1.000
+          11              1.7375                  11          1.000
+          12              1.9204                  12          1.000
+          13              2.1034                  13          1.000
+          14              2.2863                  14          1.000
+          15              2.4692                  15          1.000
+          16              2.6521                  16          1.000
+          17              2.8350                  17          1.000
+          18              3.0179                  18          1.000
+          19              3.2008                  19          1.000
+          20              3.3837                  20          1.000
+          21              3.5666                  21          1.000
+          22              3.6580                  21          1.000
+This table integrates to 1.0000 over a heated length of 3.6580 [m]
+This table integrates to 1.0000 over a total length of 3.6580 [m]
+
+
+-
+
+
+     power forcing function table
+     ----------------------------
+
+           transient time (secs)     power factor
+           ---------------------     ------------
+                   0.0000               0.0000
+
+
+     ------------------------------------------------------------------------------------------------------------------------
+1                                          axial and/or injection boundary conditions
+
+                            boundary type                                  property specification
+                            --------------------------------               ----------------------
+
+                            1= pressure and enthalpy (axial) . . . . . . . pressure
+                            2= flow and ehthalpy (axial) . . . . . . . . . mass flow
+                            3= zero axial flow . . . . . . . . . . . . . . zero
+                            4= injected flow and enthalpy  . . . . . . . . injected flow
+                            5= pressure sink and enthalpy  . . . . . . . . sink pressure
+
+
+                                                       boundary      specified
+                                 channel     axial       type          property
+                                  index       node    (see above)    (see above)     enthalpy
+
+
+                                      1          1           2              0.66        554.23
+                                      1         22           1              0.00        554.23
+0
+
+                                          zero crossflow boundary conditions
+
+                                             gap     axial
+                                            index    node
+
+
+                   0     channels will be printed
+0                  0     rods will be printed
+0                  0     gaps will be printed
+
+
+
+ *************************************************************************
+ *                         new time domain reached                       *
+ *   minimum   maximum    time      long      short   graphics    dump   *
+ *    time      time     domain     edit      edit      edit             *
+ *    step      step       end    interval  interval  interval  interval *
+ *                                                                       *
+ * 1.000E-05 1.000E-02 1.005E+01 1.000E-01 0.000E+00 0.000E+00 1.000E+01 *
+ *************************************************************************
+
+
+ time step ratio      =  1.000E+03
+
+1 trac major edit
+
+
+
+    time =  1.030E-01 seconds     delt =  5.727E-03 seconds     time steps =    60   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    59
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.10304  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  21  12.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.09       NaN       NaN       NaN       0.00      0.00      0.00
+  20  11.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.08       NaN       NaN       NaN       0.00      0.00      0.00
+  19  10.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  18  10.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  17   9.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  16   9.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  15   8.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  14   7.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  13   7.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  12   6.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  11   6.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  10   5.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   9   4.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   8   4.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   7   3.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   6   3.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   5   2.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   4   1.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.08       NaN       NaN       NaN       0.00      0.00      0.00
+   3   1.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.12       NaN       NaN       NaN       0.00      0.00      0.00
+   2   0.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.28       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.427 1.000 0.000 0.000     0.66    0.00    0.00    0.66       0.00      0.00     -0.00    366.56       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.10304  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  2.085E-01 seconds     delt =  1.000E-02 seconds     time steps =    73   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    72
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.20848  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  21  12.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.07       NaN       NaN       NaN       0.00      0.00      0.00
+  20  11.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  19  10.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  18  10.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  17   9.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  16   9.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  15   8.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  14   7.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  13   7.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  12   6.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  11   6.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  10   5.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   9   4.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   8   4.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   7   3.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   6   3.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.08       NaN       NaN       NaN       0.00      0.00      0.00
+   5   2.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.10       NaN       NaN       NaN       0.00      0.00      0.00
+   4   1.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.10       NaN       NaN       NaN       0.00      0.00      0.00
+   3   1.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.09       NaN       NaN       NaN       0.00      0.00      0.00
+   2   0.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.16       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.427 1.000 0.000 0.000     0.66    0.00    0.00    0.66       0.00      0.00      0.00    366.56       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.20848  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  3.085E-01 seconds     delt =  1.000E-02 seconds     time steps =    83   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    82
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.30848  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  21  12.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+  20  11.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  19  10.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  18  10.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  17   9.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  16   9.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  15   8.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  14   7.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  13   7.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  12   6.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  11   6.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  10   5.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   9   4.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   8   4.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.08       NaN       NaN       NaN       0.00      0.00      0.00
+   7   3.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.09       NaN       NaN       NaN       0.00      0.00      0.00
+   6   3.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.09       NaN       NaN       NaN       0.00      0.00      0.00
+   5   2.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.08       NaN       NaN       NaN       0.00      0.00      0.00
+   4   1.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.07       NaN       NaN       NaN       0.00      0.00      0.00
+   3   1.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   2   0.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.12       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.427 1.000 0.000 0.000     0.66    0.00    0.00    0.66       0.00      0.00      0.00    366.56       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.30848  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  4.085E-01 seconds     delt =  1.000E-02 seconds     time steps =    93   oitno=       1
+
+     last minimum number of inner iterations was  0 at step    92
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.40848  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  21  12.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  20  11.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  19  10.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.02       NaN       NaN       NaN       0.00      0.00      0.00
+  18  10.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.02       NaN       NaN       NaN       0.00      0.00      0.00
+  17   9.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.02       NaN       NaN       NaN       0.00      0.00      0.00
+  16   9.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  15   8.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  14   7.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  13   7.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  12   6.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  11   6.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+  10   5.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.07       NaN       NaN       NaN       0.00      0.00      0.00
+   9   4.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.08       NaN       NaN       NaN       0.00      0.00      0.00
+   8   4.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.08       NaN       NaN       NaN       0.00      0.00      0.00
+   7   3.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.07       NaN       NaN       NaN       0.00      0.00      0.00
+   6   3.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   5   2.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   4   1.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   3   1.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   2   0.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.11       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.427 1.000 0.000 0.000     0.66    0.00    0.00    0.66       0.00      0.00      0.00    366.56       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.40848  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  5.085E-01 seconds     delt =  1.000E-02 seconds     time steps =   103   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   102
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.50848  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  21  12.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  20  11.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  19  10.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.02       NaN       NaN       NaN       0.00      0.00      0.00
+  18  10.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.02       NaN       NaN       NaN       0.00      0.00      0.00
+  17   9.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  16   9.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  15   8.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  14   7.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  13   7.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+  12   6.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+  11   6.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.07       NaN       NaN       NaN       0.00      0.00      0.00
+  10   5.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.07       NaN       NaN       NaN       0.00      0.00      0.00
+   9   4.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   8   4.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   7   3.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   6   3.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   5   2.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   4   1.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   3   1.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   2   0.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.09       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.427 1.000 0.000 0.000     0.66    0.00    0.00    0.66       0.00      0.00      0.00    366.56       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.50848  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  6.085E-01 seconds     delt =  1.000E-02 seconds     time steps =   113   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   112
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.60848  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  21  12.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  20  11.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  19  10.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  18  10.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  17   9.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  16   9.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  15   8.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  14   7.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+  13   7.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+  12   6.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+  11   6.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+  10   5.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   9   4.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   8   4.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+   7   3.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   6   3.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   5   2.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   4   1.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   3   1.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   2   0.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.08       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.427 1.000 0.000 0.000     0.66    0.00    0.00    0.66       0.00      0.00     -0.00    366.56       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.60848  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  7.085E-01 seconds     delt =  1.000E-02 seconds     time steps =   123   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   122
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.70848  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  21  12.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  20  11.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  19  10.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  18  10.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  17   9.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  16   9.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+  15   8.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+  14   7.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+  13   7.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  12   6.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  11   6.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  10   5.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   9   4.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   8   4.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   7   3.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   6   3.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   5   2.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   4   1.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   3   1.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   2   0.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.07       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.427 1.000 0.000 0.000     0.66    0.00    0.00    0.66       0.00      0.00      0.00    366.56       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.70848  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  8.085E-01 seconds     delt =  1.000E-02 seconds     time steps =   133   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   132
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.80848  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  21  12.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  20  11.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  19  10.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  18  10.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  17   9.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  16   9.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  15   8.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  14   7.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  13   7.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  12   6.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  11   6.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  10   5.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+   9   4.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   8   4.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   7   3.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   6   3.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   5   2.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   4   1.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   3   1.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+   2   0.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.427 1.000 0.000 0.000     0.66    0.00    0.00    0.66       0.00      0.00      0.00    366.56       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.80848  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+1 trac major edit
+
+
+
+    time =  9.085E-01 seconds     delt =  1.000E-02 seconds     time steps =   143   oitno=       1
+
+     last minimum number of inner iterations was  0 at step   142
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.90848  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  21  12.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  20  11.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.06       NaN       NaN       NaN       0.00      0.00      0.00
+  19  10.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  18  10.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  17   9.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.05       NaN       NaN       NaN       0.00      0.00      0.00
+  16   9.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  15   8.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  14   7.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  13   7.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.04       NaN       NaN       NaN       0.00      0.00      0.00
+  12   6.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  11   6.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00
+  10   5.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.03       NaN       NaN       NaN       0.00      0.00      0.00

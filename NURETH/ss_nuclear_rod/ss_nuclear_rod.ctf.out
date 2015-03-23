@@ -11,7 +11,7 @@ h********************************* input file listing **************************
      9 air         .0000001
     10    2
     11    1    0    0    0    0    0    0    0    0    0    0    0    0    0
-    12     1    0.87877816e-04   .0298451302    0    0    0   -0.0035 -0.0035   0.007  0.007
+    12     1    9.514275E-05   2.827433E-02    0    0    0   -0.0035 -0.0035   0.007  0.007
     13    4
     14     1    1    0    0    0    0    0    0    0    0    0    0    0    0
     15     1    1    20    0.1829    0
@@ -20,7 +20,7 @@ h********************************* input file listing **************************
     18     20
     19    8
     20     1    0    1    1    0    0    0    0    0    0    0     0    0    0
-    21       1      1      1      0      0  1.000        1000.0      1  0.000   290.0
+    21       1      1      1      0      0  1.000    0.56783E+04      1  0.000   290.0
     22      1 1.000     0 0.000     0 0.000     0 0.000     0 0.000     0 0.000     0 0.000     0 0.000
     23      1     1     0     2
     24       1
@@ -28,46 +28,49 @@ h********************************* input file listing **************************
     26        3.675       290.0
     27     9
     28     1    0    0    0    0    0    0    0    0    0    0    0    0    0
-    29     1 nucl 0.9500E-02 0.9490E-02    10    1    1    0 0.00 0.010E-04 1.00    0    0    0
+    29     1 nucl 0.9500E-02 0.8192E-02    10    1    2    0 0.00 0.570E-03 1.00    0    0    0
     30  10
       12345678901234567890123456789012345678901234567890123456789012345678901234567890
-    31   1    0    0    0    0    0    0    0    0    0    0    0    0    0
-    32     1    2   8470.57                   Inconel 600
-    33      -73.0    0.431     14.83
-    34      871.0    0.431     14.83
-    35    11
-    36      1     1     2     1     0     1     0     0     0     0     0     0     0     0
-    37   0.00
-    38      1      2
-    39   0.00000000     1.00000
-    40   3.65800000     1.00000
-    41   0.0   0.0
-    42   0.00
-    43       1.00
-    44   13
-    45    2    0    0    0    0    0    0    0    0    0    0    0    0    0
-    46     1    1    2    0    0    0      0.00    -290.0       0.0         1
-    47     1   22    1    0    0    0       0.0    -290.0     165.0        1
-    48   -14
-    49 hdf5 0
-    50 rod_vtk 0
-    51 fluid_vtk 1
-    52 precise_vtk 1
-    53 run_out 1
-    54 chan_edits 0
-    55 mass_out 1
-    56 heat_out 1
-    57 krylo_out 1
-    58 convergence 1
-    59 end 14
-    60    15
+    31   2    0    0    0    0    0    0    0    0    0    0    0    0    0
+    32     1    2  10970.40                           UO2
+    33      -73.0    0.28895   5.377
+    34      871.0    0.28895   5.377
+    35     2    2   8470.57                   Inconel 600
+    36      -73.0    0.431     14.83
+    37      871.0    0.431     14.83
+    38    11
+    39      1     1     2     1     0     1     0     0     0     0     0     0     0     0
+    40   0.00
+    41      1      2
+    42   0.00000000     1.00000
+    43   3.65800000     1.00000
+    44   0.0   0.0
+    45   0.00
+    46       1.00
+    47   13
+    48    2    0    0    0    0    0    0    0    0    0    0    0    0    0
+    49     1    1    2    0    0    0      0.00    -290.0       0.0         1
+    50     1   22    1    0    0    0       0.0    -290.0     165.0        1
+    51   -14
+    52 hdf5 0
+    53 rod_vtk 0
+    54 fluid_vtk 1
+    55 precise_vtk 1
+    56 run_out 1
+    57 chan_edits 0
+    58 mass_out 1
+    59 heat_out 1
+    60 krylo_out 1
       12345678901234567890123456789012345678901234567890123456789012345678901234567890
-    61   1.0000E-04  1.00000E-02       2.01        0.05  1.0000E+01  0.1000E+04    10000
-    62    19
-    63 residual 1
-    64 implicit 1
-    65 optimize 0
-    66 end 19
+    61 convergence 1
+    62 end 14
+    63    15
+    64   1.0000E-05  1.00000E-02       15.20        0.20  1.0000E+01  0.1000E+04    10000
+    65    19
+    66 residual 1
+    67 implicit 1
+    68 optimize 1
+    69 end 19
 
 
 
@@ -94,7 +97,7 @@ h********************************* input file listing **************************
     9
     1    0    0    0
    10
-    1
+    2
    11
     1    1    2    1    0    1
    13
@@ -138,7 +141,7 @@ h********************************* input file listing **************************
                        ----------------------------------------------------------------------------------------------------
 
 
-                             1              0.1362         1.175        0.1362       0.1362         0         0         0
+                             1              0.1475         1.113        0.1475       0.1475         0         0         0
 
 
 
@@ -235,11 +238,11 @@ h********************************* input file listing **************************
 0       type  1 - nucl     nuclear fuel rod -----------------------------------------------------------------------------------
 
            rod diameter                 0.3740 (in.)                 no. of nodes in fuel         10
-           fuel pellet diameter         0.3736 (in.)                 fuel theoretical density     1.00000
-           clad thickness               0.0000 (in.)                 central void diamter         0.0000 (in.)
+           fuel pellet diameter         0.3225 (in.)                 fuel theoretical density     1.00000
+           clad thickness               0.0224 (in.)                 central void diamter         0.0000 (in.)
 
            fuel material index =  1
-           cladding material index =  1
+           cladding material index =  2
            oxide on clad exterior is zirconium-dioxide
 
 
@@ -247,19 +250,19 @@ h********************************* input file listing **************************
                       node            region          location     power fraction     power factor
                       ----            ------          --------     --------------     ------------
                       *fuel*
-                        1      ( 0.0000- 0.0197)      0.0139         0.01108            1.00000
-                        2      ( 0.0197- 0.0393)      0.0311         0.03324            1.00000
-                        3      ( 0.0393- 0.0590)      0.0501         0.05540            1.00000
-                        4      ( 0.0590- 0.0787)      0.0695         0.07756            1.00000
-                        5      ( 0.0787- 0.0983)      0.0890         0.09972            1.00000
-                        6      ( 0.0983- 0.1180)      0.1086         0.12188            1.00000
-                        7      ( 0.1180- 0.1377)      0.1282         0.14404            1.00000
-                        8      ( 0.1377- 0.1573)      0.1478         0.16620            1.00000
-                        9      ( 0.1573- 0.1770)      0.1674         0.18837            1.00000
-                       10      ( 0.1770- 0.1868)      0.1868         0.10249            1.00000
+                        1      ( 0.0000- 0.0170)      0.0120         0.01108            1.00000
+                        2      ( 0.0170- 0.0339)      0.0268         0.03324            1.00000
+                        3      ( 0.0339- 0.0509)      0.0433         0.05540            1.00000
+                        4      ( 0.0509- 0.0679)      0.0600         0.07756            1.00000
+                        5      ( 0.0679- 0.0849)      0.0769         0.09972            1.00000
+                        6      ( 0.0849- 0.1018)      0.0937         0.12188            1.00000
+                        7      ( 0.1018- 0.1188)      0.1107         0.14404            1.00000
+                        8      ( 0.1188- 0.1358)      0.1276         0.16620            1.00000
+                        9      ( 0.1358- 0.1528)      0.1445         0.18837            1.00000
+                       10      ( 0.1528- 0.1613)      0.1613         0.10249            1.00000
                       *clad*
-                       11      ( 0.1870- 0.1870)      0.1870
-                       12      ( 0.1870- 0.1870)      0.1870
+                       11      ( 0.1646- 0.1758)      0.1646
+                       12      ( 0.1758- 0.1870)      0.1870
 
 
 
@@ -268,7 +271,7 @@ h********************************* input file listing **************************
                     rod     hgap        rod     hgap        rod     hgap        rod     hgap        rod     hgap
                     no.   (b/h-f2)      no.   (b/h-f2)      no.   (b/h-f2)      no.   (b/h-f2)      no.   (b/h-f2)
                     ---   --------      ---   --------      ---   --------      ---   --------      ---   --------
-                      1     176.1
+                      1    1000.0
 
 
      ------------------------------------------------------------------------------------------------------------------------
@@ -278,7 +281,15 @@ h********************************* input file listing **************************
      ------------------------
 
 
-           material type -  1          cold state density = 528.800 (lbm/ft3)          Inconel   
+           material type -  1          cold state density = 684.859 (lbm/ft3)          UO2       
+
+                      temperature (f)       specific heat (btu/lbm-f)       conductivity (btu/hr-ft-f)
+
+                          -99.4                0.0690                         3.107
+                         1599.8                0.0690                         3.107
+
+
+           material type -  2          cold state density = 528.800 (lbm/ft3)          Inconel   
 
                       temperature (f)       specific heat (btu/lbm-f)       conductivity (btu/hr-ft-f)
 
@@ -371,7 +382,7 @@ This table integrates to 1.0000 over a total length of 3.6580 [m]
  *    time      time     domain     edit      edit      edit             *
  *    step      step       end    interval  interval  interval  interval *
  *                                                                       *
- * 1.000E-04 1.000E-02 1.000E+10 1.000E+10 0.000E+00 0.000E+00 1.000E+01 *
+ * 1.000E-05 1.000E-02 1.000E+10 1.000E+10 0.000E+00 0.000E+00 1.000E+01 *
  *************************************************************************
 
 
@@ -381,7 +392,7 @@ This table integrates to 1.0000 over a total length of 3.6580 [m]
 
 
 
-    time =  1.200E-04 seconds     delt =  1.200E-04 seconds     time steps =     2   oitno=       1
+    time =  1.200E-05 seconds     delt =  1.200E-05 seconds     time steps =     2   oitno=       1
 
      last minimum number of inner iterations was  0 at step     1
      current convergence limits and limitation counts
@@ -391,39 +402,39 @@ This table integrates to 1.0000 over a total length of 3.6580 [m]
      cptime = 0.000E+00
 
  ************************************************************************************************************************
-          simulation time =      0.00012  seconds           aver. properties for channels
+          simulation time =      0.00001  seconds           aver. properties for channels
  node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
   no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
                     liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
 
-  21  12.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.82       NaN       NaN       NaN       0.00      0.00      0.00
-  20  11.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.85       NaN       NaN       NaN       0.00      0.00      0.00
-  19  10.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-  18  10.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-  17   9.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-  16   9.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-  15   8.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-  14   7.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-  13   7.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-  12   6.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-  11   6.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-  10   5.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-   9   4.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-   8   4.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-   7   3.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-   6   3.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-   5   2.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-   4   1.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-   3   1.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.63       NaN       NaN       NaN       0.00      0.00      0.00
-   2   0.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       1.46       NaN       NaN       NaN       0.00      0.00      0.00
-   1   0.00  -.427 1.000 0.000 0.000     0.66    0.00    0.00    0.66       0.00      0.00     -0.00    366.56       0.00      0.00      0.00
+  21  12.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.46       NaN       NaN       NaN       0.00      0.00      0.00
+  20  11.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+  19  10.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+  18  10.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+  17   9.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+  16   9.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+  15   8.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+  14   7.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+  13   7.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+  12   6.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+  11   6.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+  10   5.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+   9   4.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+   8   4.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+   7   3.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+   6   3.00    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+   5   2.40    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+   4   1.80    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+   3   1.20    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.71       NaN       NaN       NaN       0.00      0.00      0.00
+   2   0.60    NaN 1.000 0.000 0.000     0.66     NaN    0.00     NaN       0.93       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.427 1.000 0.000 0.000     0.66    0.00    0.00    0.66       0.00      0.00      0.00    366.56       0.00      0.00      0.00
 1                             injection boundary conditions date    time  
 
                     case     0                        Single Channel No Fuel Pins Physical Transient                              
 
  ***********************************************************************************************************************************
 
-          simulation time =      0.00012  seconds
+          simulation time =      0.00001  seconds
 
 
                               channel   node        wginjt    wlinjt    hginjt    hlinjt
@@ -433,17 +444,17 @@ This table integrates to 1.0000 over a total length of 3.6580 [m]
               Code Section                                 Cumulative wall-
                                                              clock time (s)
 --------------------------------------------------     --------------------
-whole simulation time                                                 0.367
-read-in and initialization time                                       0.032
-Preparation for timestep (prep3d)                                     0.000
+whole simulation time                                                 1.698
+read-in and initialization time                                       1.199
+Preparation for timestep (prep3d)                                     0.042
 Calculation of HTCs and re-meshing (heat_1)                           0.000
 Conductor solution (temp)                                             0.000
 Setup and solve of momentum eqns (xschem part 1)                      0.000
 Setup of continuity/energy eqns (xschem part 2)                       0.000
-Solution of the pressure matri (gssolv)                               0.306
+Solution of the pressure matri (gssolv)                               0.166
 Independent variable update step (dep_var_update)                     0.000
 Interfacial area transport solve                                      0.000
 Traditional CTF output                                                0.000
-VTK file output                                                       0.001
-Time in transient simulation (trans)                                  0.335
-                             Sum of timed sections                    1.041
+VTK file output                                                       0.002
+Time in transient simulation (trans)                                  0.499
+                             Sum of timed sections                    3.606

@@ -43,8 +43,8 @@ air         .0000001
    1    0    0    0    0    0    0    0    0    0    0    0    0    0          
 *Card 2.2     
 *Subchannel Type 1 - central
-**  I        AN           PW ABOT ATOP NMGP    X   Y    XSIZ  YSIZ                                          
-    1    0.87877816e-04   .0298451302    0    0    0   -0.0035 -0.0035   0.007  0.007 
+**  I        AN           PW         ABOT  ATOP NMGP        X       Y   XSIZ    YSIZ                                          
+    1    9.514275E-05   2.827433E-02    0    0    0   -0.0035 -0.0035   0.007  0.007 
 ******************************************************************************* 
 *GROUP 4 - Vertical Channel Connection Data                                  * 
 ******************************************************************************* 
@@ -60,8 +60,8 @@ air         .0000001
 *Card 4.3                                                                      
 **  I KCHA KCHA KCHA KCHA KCHA KCHA KCHB KCHB KCHB KCHB KCHB KCHB               
     1    1    0    0    0    0    0    1    0    0    0    0    0               
-*Card 4.5                                                                      
-**IWDE                                                                          
+*1ard 4.5                                                                      
+*1IWDE                                                                          
      1                                                                          
 *Card 4.6                                                                      
 **MSIM                                                                          
@@ -80,7 +80,7 @@ air         .0000001
 **    N   IFTY   IAXP   NRND DAXMIN  RMULT        HGAP  ISECR  HTAMB   TAMB                    
 *Card 8.3                                                                                      
 **NSCH   PIE  NSCH   PIE  NSCH   PIE  NSCH   PIE  NSCH   PIE  NSCH   PIE  NSCH   PIE NSCH   PIE
-      1      1      1      0      0  1.000        1000.0      1  0.000   290.0
+      1      1      1      0      0  1.000    0.56783E+04      1  0.000   290.0
      1 1.000     0 0.000     0 0.000     0 0.000     0 0.000     0 0.000     0 0.000     0 0.000
 *Card 8.6
 **   I  NRT1  NST1 NRAX1
@@ -103,7 +103,8 @@ air         .0000001
     1    0    0    0    0    0    0    0    0    0    0    0    0    0
 *Card 9.2                                                                                      
 **  I FTYP       DROD       DFUL  NFUL IMTF IMTC IMOX DCRE      TCLD  FTDS IGPC IGFC IRDP      
-    1 nucl 0.9500E-02 0.9490E-02    10    1    1    0 0.00 0.010E-04 1.00    0    0    0
+    1 nucl 0.9500E-02 0.8192E-02     5    1    2    0 0.00 0.570E-03 1.00    0    0    0
+**  1 nucl 1.0000E-02 0.9000E-02    10    1    1    0 0.00 0.025E-02 1.00    0    0    0
 *******************************************************************************
 *GROUP 10 - Material Properties Tables                                         
 *******************************************************************************
@@ -112,14 +113,19 @@ air         .0000001
  10                                                                           
 *Card 10.1                                                                     
 *NMT NDM2 NDM3 NDM4 NDM5 NDM6 NDM7 NDM8 NDM9 NM10 NM11 NM12 NM13 NM14          
-  1    0    0    0    0    0    0    0    0    0    0    0    0    0          
+  2    0    0    0    0    0    0    0    0    0    0    0    0    0          
 *Card 10.2                                                                     
 **  N NTDP     RCOLD                        IMATAN                              
-    1    2   8470.57                   Inconel 600                              
+    1    2  10970.40                           UO2
+**   TPROP     CPF1      THCF                                                   
+     -73.0    0.28895   5.377 
+     871.0    0.28895   5.377 
+*Card 10.2                                                                     
+**  N NTDP     RCOLD                        IMATAN                              
+    2    2   8470.57                   Inconel 600                              
 **   TPROP     CPF1      THCF                                                   
      -73.0    0.431     14.83
      871.0    0.431     14.83
-**     871.0    0.623     28.83                                                   
 ********************************************************************************
 *GROUP 11 - Boundary Condition Data                                            
 *******************************************************************************
@@ -186,7 +192,7 @@ end 14
 **NGRP                                                                                          
    15  
 **     DTMIN        DTMAX       TEND       EDINT      DMPINT       RTWFP     MAXITS  
-  1.0000E-04  1.00000E-02       2.01        0.05  1.0000E+01  0.1000E+04    10000
+  1.0000E-05  2.00000E-01       20.20        0.20  1.0000E+01  0.1000E+04    10000
   -0.1000E-03  0.1000E+00  0.1000E+00  0.0000E+00  0.0000E+00  0.1000E+04   10000
 ********************************************************************************
 *END GROUP TIME DOMAIN DATA                                                    
@@ -200,7 +206,7 @@ end 14
    19
 *key value
 residual 1
-implicit 0
+implicit 1
 optimize 1
 **
 end 19
