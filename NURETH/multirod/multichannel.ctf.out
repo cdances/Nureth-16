@@ -1,0 +1,468 @@
+h********************************* input file listing *********************************
+      12345678901234567890123456789012345678901234567890123456789012345678901234567890
+     1        1
+     2        1             0
+     3      0.001           1           10
+     4               Single Channel No Fuel Pins Physical Transient
+     5    1
+     6     1    2    0    0    5     1.20       1    1    1     0    0    0    0    0
+     7    1.200      4.0E+0       0.0
+     8     165.0     -290.0      30.0       1.0    0.9999999
+     9 air         .0000001
+    10    2
+    11    4    0    0    0    0    0    0    0    0    0    0    0    0    0
+    12     1    9.514275E-05   2.827433E-02    0    0    0   -0.0035 -0.0035   0.007  0.007
+    13     2    9.514275E-05   2.827433E-02    0    0    0    0.0035 -0.0035   0.007  0.007
+    14     3    9.514275E-05   2.827433E-02    0    0    0   -0.0035  0.0035   0.007  0.007
+    15     4    9.514275E-05   2.827433E-02    0    0    0    0.0035  0.0035   0.007  0.007
+    16    4
+    17     1    1    0    0    0    0    0    0    0    0    0    0    0    0
+    18     1    4    10    0.3658    0
+    19     1    1    0    0    0    0    0    1    0    0    0    0    0
+    20     2    2    0    0    0    0    0    2    0    0    0    0    0
+    21     3    3    0    0    0    0    0    3    0    0    0    0    0
+    22     4    4    0    0    0    0    0    4    0    0    0    0    0
+    23      1
+    24     40
+    25    8
+    26     1    0    1    1    0    0    0    0    0    0    0     0    0    0
+    27       1      1      1      0      0  1.000    0.56783E+04      1  0.000   290.0
+    28      1 0.250     2 0.250     3 0.250     4 0.250     0 0.000     0 0.000     0 0.000     0 0.000
+    29      1     1     0     2
+    30       1
+      12345678901234567890123456789012345678901234567890123456789012345678901234567890
+    31        0.000       290.0
+    32        3.658       290.0
+    33     9
+    34     1    0    0    0    0    0    0    0    0    0    0    0    0    0
+    35     1 nucl 0.9500E-02 0.8192E-02     5    1    2    0 0.00 0.570E-03 1.00    0    0    0
+    36  10
+    37   2    0    0    0    0    0    0    0    0    0    0    0    0    0
+    38     1    2  10970.40                           UO2
+    39      -73.0    0.28895   5.377
+    40      871.0    0.28895   5.377
+    41     2    2   8470.57                   Inconel 600
+    42      -73.0    0.431     14.83
+    43      871.0    0.431     14.83
+    44    11
+    45      1     1     2     1     0     1     0     0     0     0     0     0     0     0
+    46   0.00
+    47      1      2
+    48   0.00000000     1.00000
+    49   3.65800000     1.00000
+    50   0.0   0.0
+    51   0.00
+    52       1.00      1.00      1.00      1.00
+    53   13
+    54    8    0    0    0    0    0    0    0    0    0    0    0    0    0
+    55     1    1    2    0    0    0      0.00    -290.0       0.0         1
+    56     2    1    2    0    0    0      0.00    -290.0       0.0         1
+    57     3    1    2    0    0    0      0.00    -290.0       0.0         1
+    58     4    1    2    0    0    0      0.00    -290.0       0.0         1
+    59     1   12    1    0    0    0       0.0    -290.0     165.0        1
+    60     2   12    1    0    0    0       0.0    -290.0     165.0        1
+      12345678901234567890123456789012345678901234567890123456789012345678901234567890
+    61     3   12    1    0    0    0       0.0    -290.0     165.0        1
+    62     4   12    1    0    0    0       0.0    -290.0     165.0        1
+    63   -14
+    64 hdf5 0
+    65 rod_vtk 1
+    66 fluid_vtk 1
+    67 precise_vtk 1
+    68 run_out 1
+    69 chan_edits 0
+    70 mass_out 1
+    71 heat_out 1
+    72 krylo_out 1
+    73 convergence 1
+    74 end 14
+    75    15
+    76   1.0000E-05  1.00000E-02       15.20        0.20  1.0000E+01  0.1000E+04    10000
+    77    17
+    78   multichannel.h5 multichannel.vtk
+    79            1          1
+    80             2           2
+    81 1
+    82 1 1
+    83 1 1
+    84    19
+    85 residual 1
+    86 implicit 1
+    87 optimize 1
+    88 end 19
+
+
+
+
+
+
+
+                    main control parameters are:
+
+                    restart time step . . . . . . . . . . .    0
+                    simulation start time . . . . . . . . .     0.000
+                    outer iteration convergence limit . . . 0.0010000
+                    maximum number of inner iterations  . .   10
+                    maximum number of outer iterations  . .    1
+
+    1
+    1    2    0    0    5
+    2
+    4
+    4
+    1    1    0
+    8
+    1    0    1    1    0    0    0    0    0    0    0
+    9
+    1    0    0    0
+   10
+    2
+   11
+    1    1    2    1    0    1
+   13
+    8    0    0    0
+  -14
+   15
+   17
+   19
+
+
+
+
+                                                           input summary
+
+                                    
+                                    initial system operating pressure (psi)  . . . 2393.12267
+                                    initial system steam/water enthalpy   . . . . . 554.23226
+                                    initial noncondensable gas enthalpy   . . . . .  12.89769
+                                    initial liquid volume fraction        . . . . .   1.00000
+                                    average linear heat rate (kw/ft) . . . . . . .    1.21920
+                                    total axial length (inches). . . . . . . . . .  144.01575
+                                    total no. of axial nodes . . . . . . . . . . .         10
+
+
+
+
+                                    initial volume fractions of vapor and noncondensable gases
+
+   0.00000 percent of the total system volume is initially filled with vapor and/or noncondensable gases. the fraction
+            of this gas volume occupied by water vapor and each noncondensable gas is as follows:
+ steam         1.0000      air    0.00000
+
+
+
+
+                                                          subchannel data
+
+
+                                         nominal         wetted      momentum     momentum      axial variation tables
+                       subchannel     channel area     perimeter       area         area   continuity momentum   wetted
+                         id. no.        (in**2)        (in.)       (bottom)      (top)        area       area    perimeter
+                       ----------------------------------------------------------------------------------------------------
+
+
+                             1              0.1475         1.113        0.1475       0.1475         0         0         0
+                             2              0.1475         1.113        0.1475       0.1475         0         0         0
+                             3              0.1475         1.113        0.1475       0.1475         0         0         0
+                             4              0.1475         1.113        0.1475       0.1475         0         0         0
+
+
+
+
+
+
+
+     **********************************************************************************************************************************
+
+          channel thermal connection input data
+          -------------------------------------
+
+          channel no.                    fuel rod - surface index pairs                                  heat slab indices
+          -----------     ------------------------------------------------------------     ----------------------------------------
+
+               1            1 - 1     0 - 0     0 - 0     0 - 0     0 - 0     0 - 0            0    0    0    0    0    0    0    0
+               2            1 - 2     0 - 0     0 - 0     0 - 0     0 - 0     0 - 0            0    0    0    0    0    0    0    0
+               3            1 - 3     0 - 0     0 - 0     0 - 0     0 - 0     0 - 0            0    0    0    0    0    0    0    0
+               4            1 - 4     0 - 0     0 - 0     0 - 0     0 - 0     0 - 0            0    0    0    0    0    0    0    0
+
+
+     **********************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+                                           channel splitting data - axial level   1 of   1
+
+                                          number           no. of     cell length
+                                        of channels         nodes     (nominal)
+
+                                             4               10          1.2001
+
+
+         channel           channels above                   channels below
+                     ----------------------------     ----------------------------
+              1        1    0    0    0    0    0       1    0    0    0    0    0
+              2        2    0    0    0    0    0       2    0    0    0    0    0
+              3        3    0    0    0    0    0       3    0    0    0    0    0
+              4        4    0    0    0    0    0       4    0    0    0    0    0
+
+
+
+         variable axial noding
+         ---------------------
+                    node   length       node   length       node   length       node   length       node   length
+                     no.    (ft)         no.    (ft)         no.    (ft)         no.    (ft)         no.    (ft)
+                    ----   ------       ----   ------       ----   ------       ----   ------       ----   ------
+                      2    1.2001         3    1.2001         4    1.2001         5    1.2001         6    1.2001
+                      7    1.2001         8    1.2001         9    1.2001        10    1.2001        11    1.2001
+
+
+
+
+                                           simultaneous solution group information
+
+                         no. of               last cell number in each group
+                         groups
+                             1                            40
+
+
+
+
+     *****************************************************************************************************************************
+
+                                                fuel rod and heat slab model input
+
+                                                     no. of fuel rods  =   1               no. of fuel rod surfaces  =   4
+                                                     no. of heat slabs =   0
+
+     *****************************************************************************************************************************
+
+
+                                                       fuel rod model input
+
+         fuel rod    axial location    geometry   conductor    radial power    axial power     renoding     minimum        rod
+           index      (in.) - (in.)      type        type          factor         profile       flag      node size   multiplier
+         --------    --------------    --------    ---------    ------------    -----------    --------    ---------   ----------
+
+             1         0.00 - 144.02     nucl          1            1.000            1        1000000000     0.0500        1.000
+          ------------------------------------------------------------------------------------------------------------------------
+            Average radial factor:                                  1.000
+
+
+
+     -----------------------------------------------------------------------------------------------------------------------------
+
+                                             conductor geometry description
+                                                  no. of geometry types =  1
+
+     -----------------------------------------------------------------------------------------------------------------------------
+
+0       type  1 - nucl     nuclear fuel rod -----------------------------------------------------------------------------------
+
+           rod diameter                 0.3740 (in.)                 no. of nodes in fuel          5
+           fuel pellet diameter         0.3225 (in.)                 fuel theoretical density     1.00000
+           clad thickness               0.0224 (in.)                 central void diamter         0.0000 (in.)
+
+           fuel material index =  1
+           cladding material index =  2
+           oxide on clad exterior is zirconium-dioxide
+
+
+           radial noding information
+                      node            region          location     power fraction     power factor
+                      ----            ------          --------     --------------     ------------
+                      *fuel*
+                        1      ( 0.0000- 0.0358)      0.0253         0.04938            1.00000
+                        2      ( 0.0358- 0.0717)      0.0567         0.14815            1.00000
+                        3      ( 0.0717- 0.1075)      0.0914         0.24691            1.00000
+                        4      ( 0.1075- 0.1433)      0.1267         0.34568            1.00000
+                        5      ( 0.1433- 0.1613)      0.1613         0.20988            1.00000
+                      *clad*
+                        6      ( 0.1646- 0.1758)      0.1646
+                        7      ( 0.1758- 0.1870)      0.1870
+
+
+
+        constant gap conductance
+           table of gap conductance vs rod for this geometry type
+                    rod     hgap        rod     hgap        rod     hgap        rod     hgap        rod     hgap
+                    no.   (b/h-f2)      no.   (b/h-f2)      no.   (b/h-f2)      no.   (b/h-f2)      no.   (b/h-f2)
+                    ---   --------      ---   --------      ---   --------      ---   --------      ---   --------
+                      1    1000.0
+
+
+     ------------------------------------------------------------------------------------------------------------------------
+
+
+     material property tables
+     ------------------------
+
+
+           material type -  1          cold state density = 684.859 (lbm/ft3)          UO2       
+
+                      temperature (f)       specific heat (btu/lbm-f)       conductivity (btu/hr-ft-f)
+
+                          -99.4                0.0690                         3.107
+                         1599.8                0.0690                         3.107
+
+
+           material type -  2          cold state density = 528.800 (lbm/ft3)          Inconel   
+
+                      temperature (f)       specific heat (btu/lbm-f)       conductivity (btu/hr-ft-f)
+
+                          -99.4                0.1029                         8.569
+                         1599.8                0.1029                         8.569
+
+
+Axial Power Profile Table Data
+------------------------------
+                          Time [s]:     0.00000E+00
+    Axial Power Factor Table Index:               1
+               Used by Rod numbers:
+      1
+Rod node no.      Axial loc. [m]      Fluid node no.   Power Factor
+------------------------------------------------------------------------
+           1              0.0000                   2          1.000
+           2              0.1829                   2          1.000
+           3              0.5487                   3          1.000
+           4              0.9145                   4          1.000
+           5              1.2803                   5          1.000
+           6              1.6461                   6          1.000
+           7              2.0119                   7          1.000
+           8              2.3777                   8          1.000
+           9              2.7435                   9          1.000
+          10              3.1093                  10          1.000
+          11              3.4751                  11          1.000
+          12              3.6580                  11          1.000
+This table integrates to 1.0000 over a heated length of 3.6580 [m]
+This table integrates to 1.0000 over a total length of 3.6580 [m]
+
+
+-
+
+
+     power forcing function table
+     ----------------------------
+
+           transient time (secs)     power factor
+           ---------------------     ------------
+                   0.0000               0.0000
+
+
+     ------------------------------------------------------------------------------------------------------------------------
+1                                          axial and/or injection boundary conditions
+
+                            boundary type                                  property specification
+                            --------------------------------               ----------------------
+
+                            1= pressure and enthalpy (axial) . . . . . . . pressure
+                            2= flow and ehthalpy (axial) . . . . . . . . . mass flow
+                            3= zero axial flow . . . . . . . . . . . . . . zero
+                            4= injected flow and enthalpy  . . . . . . . . injected flow
+                            5= pressure sink and enthalpy  . . . . . . . . sink pressure
+
+
+                                                       boundary      specified
+                                 channel     axial       type          property
+                                  index       node    (see above)    (see above)     enthalpy
+
+
+                                      1          1           2              0.66        554.23
+                                      2          1           2              0.66        554.23
+                                      3          1           2              0.66        554.23
+                                      4          1           2              0.66        554.23
+                                      1         12           1              0.00        554.23
+                                      2         12           1              0.00        554.23
+                                      3         12           1              0.00        554.23
+                                      4         12           1              0.00        554.23
+0
+
+                                          zero crossflow boundary conditions
+
+                                             gap     axial
+                                            index    node
+
+
+                   0     channels will be printed
+0                  0     rods will be printed
+0                  0     gaps will be printed
+
+
+
+ *************************************************************************
+ *                         new time domain reached                       *
+ *   minimum   maximum    time      long      short   graphics    dump   *
+ *    time      time     domain     edit      edit      edit             *
+ *    step      step       end    interval  interval  interval  interval *
+ *                                                                       *
+ * 1.000E-05 1.000E-02 1.000E+10 1.000E+10 0.000E+00 0.000E+00 1.000E+01 *
+ *************************************************************************
+
+
+ time step ratio      =  1.000E+03
+
+1 trac major edit
+
+
+
+    time =  1.200E-05 seconds     delt =  1.200E-05 seconds     time steps =     2   oitno=       1
+
+     last minimum number of inner iterations was  0 at step     1
+     current convergence limits and limitation counts
+         delamx      xxxxxx      delrmx      delvmx      delpmx
+        1.000E+08   0.000E+00   1.000E+08   8.000E+07   1.000E+08
+            0           0           0           0           0           0
+     cptime = 0.000E+00
+
+ ************************************************************************************************************************
+          simulation time =      0.00001  seconds           aver. properties for channels
+ node dist. quality  void fraction                mass flow                    enthalpy incr.          enthalpy              heat added
+  no.  (ft.)                                       (lbm/s)                        (btu/s)               (btu/s)               (btu/s)
+                    liq. vapor entr.   liquid   vapor   entr.  integr.   liquid     vapor   integr.     mixture     liquid     vapor   integr.
+
+  11  12.00    NaN 1.000 0.000 0.000     2.65     NaN    0.00     NaN       0.93       NaN       NaN       NaN       0.00      0.00      0.00
+  10  10.80    NaN 1.000 0.000 0.000     2.65     NaN    0.00     NaN       1.39       NaN       NaN       NaN       0.00      0.00      0.00
+   9   9.60    NaN 1.000 0.000 0.000     2.65     NaN    0.00     NaN       1.39       NaN       NaN       NaN       0.00      0.00      0.00
+   8   8.40    NaN 1.000 0.000 0.000     2.65     NaN    0.00     NaN       1.39       NaN       NaN       NaN       0.00      0.00      0.00
+   7   7.20    NaN 1.000 0.000 0.000     2.65     NaN    0.00     NaN       1.39       NaN       NaN       NaN       0.00      0.00      0.00
+   6   6.00    NaN 1.000 0.000 0.000     2.65     NaN    0.00     NaN       1.39       NaN       NaN       NaN       0.00      0.00      0.00
+   5   4.80    NaN 1.000 0.000 0.000     2.65     NaN    0.00     NaN       1.39       NaN       NaN       NaN       0.00      0.00      0.00
+   4   3.60    NaN 1.000 0.000 0.000     2.65     NaN    0.00     NaN       1.39       NaN       NaN       NaN       0.00      0.00      0.00
+   3   2.40    NaN 1.000 0.000 0.000     2.65     NaN    0.00     NaN       1.39       NaN       NaN       NaN       0.00      0.00      0.00
+   2   1.20    NaN 1.000 0.000 0.000     2.65     NaN    0.00     NaN       1.83       NaN       NaN       NaN       0.00      0.00      0.00
+   1   0.00  -.428 1.000 0.000 0.000     2.65    0.00    0.00    2.65       0.00      0.00     -0.00   1466.25       0.00      0.00      0.00
+1                             injection boundary conditions date    time  
+
+                    case     0                        Single Channel No Fuel Pins Physical Transient                              
+
+ ***********************************************************************************************************************************
+
+          simulation time =      0.00001  seconds
+
+
+                              channel   node        wginjt    wlinjt    hginjt    hlinjt
+                                no.     no.        lbm/sec   lbm/sec   btu/lbm   btu/lbm
+
+
+              Code Section                                 Cumulative wall-
+                                                             clock time (s)
+--------------------------------------------------     --------------------
+whole simulation time                                                 1.903
+read-in and initialization time                                       1.209
+Preparation for timestep (prep3d)                                     0.017
+Calculation of HTCs and re-meshing (heat_1)                           0.000
+Conductor solution (temp)                                             0.000
+Setup and solve of momentum eqns (xschem part 1)                      0.000
+Setup of continuity/energy eqns (xschem part 2)                       0.000
+Solution of the pressure matri (gssolv)                               0.317
+Independent variable update step (dep_var_update)                     0.000
+Interfacial area transport solve                                      0.000
+Traditional CTF output                                                0.001
+VTK file output                                                       0.035
+Time in transient simulation (trans)                                  0.694
+                             Sum of timed sections                    4.176
